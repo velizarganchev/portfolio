@@ -1,0 +1,30 @@
+nav {
+    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141d2f;
+  padding: 37px 100px;
+  font-size: 23px;
+
+  > img {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .nav-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+
+    > a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: #70e61c;
+      }
+    }
+  }
+}
