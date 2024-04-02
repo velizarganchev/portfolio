@@ -8,6 +8,7 @@ nav {
   background-color: $dark_blue;
   @include dFlex($jc: space-between);
   padding: 37px 100px;
+  z-index: 10000;
 
   >img {
     &:hover {

@@ -1,0 +1,51 @@
+@import "../../../styles.scss";
+
+.about-container {
+  height: 80vh;
+  position: relative;
+  z-index: 9999;
+  background-color: $dark_blue;
+  color: white;
+  @include dFlex($g: 20px, $jc: space-around);
+
+  .about-left-container {
+    width: 470px;
+    height: auto;
+
+    > h2 {
+      font-size: 90px;
+      font-weight: 700;
+      line-height: 100px;
+    }
+
+    .about-left-text {
+      .about-main-text {
+        > p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.2px;
+        }
+      }
+
+      .about-subtext-container {
+        @include dFlex($g: 35px);
+        padding: 8px;
+      }
+    }
+  }
+
+  .about-right-container {
+    display: flex;
+
+
+    .about-ellipse{
+        position: absolute;
+    }
+
+    .about-img-container {
+      > img {
+        border-radius: 50%;
+      }
+    }
+  }
+}
