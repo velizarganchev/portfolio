@@ -1,24 +1,26 @@
-nav {
-    
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #141d2f;
-  padding: 37px 100px;
-  font-size: 23px;
+@import '../../../styles.scss';
 
-  > img {
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $dark_blue;
+  @include dFlex($jc: space-between);
+  padding: 37px 100px;
+
+  >img {
     &:hover {
       cursor: pointer;
     }
   }
-  .nav-links-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 29px;
 
-    > a {
+  .nav-links-container {
+    @include dFlex($g: 29px);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    >a {
       color: white;
       text-decoration: none;
 
