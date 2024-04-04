@@ -6,7 +6,8 @@
   z-index: 9999;
   background-color: $dark_blue;
   color: white;
-  @include dFlex($g: 20px, $jc: space-around);
+  @include dFlex($g: 20px);
+  overflow-x: clip;
 
   .about-left-container {
     width: 470px;
@@ -37,9 +38,8 @@
   .about-right-container {
     display: flex;
 
-
-    .about-ellipse{
-        position: absolute;
+    .about-ellipse {
+      position: absolute;
     }
 
     .about-img-container {
@@ -47,5 +47,12 @@
         border-radius: 50%;
       }
     }
+  }
+
+  .purple-shadow {
+    position: absolute;
+    right: -450px;
+    top: -200px;
+    z-index: 9999;
   }
 }

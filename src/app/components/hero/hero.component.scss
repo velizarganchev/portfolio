@@ -14,11 +14,11 @@ header {
     justify-content: center;
 
     .hero-img-container {
-
-      .hero-shadows{
+      .hero-shadows {
         position: absolute;
         z-index: 0;
         left: -80px;
+        top: 150px;
       }
 
       .hero-photo {
@@ -98,7 +98,7 @@ header {
     position: relative;
     z-index: 9999;
     @include dFlex($jc: flex-start, $g: 42px);
-    top: 55px;
+    top: 75px;
 
     .hero-link {
       > img {
