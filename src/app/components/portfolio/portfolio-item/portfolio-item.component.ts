@@ -1,12 +1,23 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio-item',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './portfolio-item.component.html',
-  styleUrl: './portfolio-item.component.scss'
+  styleUrl: './portfolio-item.component.scss',
 })
 export class PortfolioItemComponent {
+  @Input('srProject') project!: {
+    title: string;
+    imgPath: string;
+    technologys: string[];
+    description: string;
+    links: string[];
+  };
 
+  @Input('srIndex') index!: number;
+
+  constructor() {}
 }
