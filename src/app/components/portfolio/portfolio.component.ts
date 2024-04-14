@@ -9,16 +9,12 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [PortfolioItemComponent, CommonModule],
   templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.scss'
+  styleUrl: './portfolio.component.scss',
 })
-export class PortfolioComponent{
-
+export class PortfolioComponent {
   projects;
 
-  constructor(){
+  constructor() {
     this.projects = fakeProjects;
-    console.log(this.projects);
-    
   }
-
 }
