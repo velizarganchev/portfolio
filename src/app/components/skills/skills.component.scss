@@ -15,9 +15,47 @@ section {
     grid-template-columns: auto auto auto auto;
     justify-content: center;
     align-items: center;
-    gap: 112px;
+    gap: 70px;
+    z-index: 9999;
+
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.2px;
+
+      img {
+        width: 60px;
+        height: 60px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+          animation: bounce 1s ease infinite;
+        }
+      }
+    }
   }
 
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
   .right-section {
     width: 471px;
     @include dFlex();
@@ -40,16 +78,23 @@ section {
       padding: 15px 30px;
       border-radius: 10px;
       border: none;
+      color: white;
       font-size: 23px;
       font-weight: 400;
       line-height: 27.6px;
       background-color: $green;
+      transition: transform 500ms ease-in-out;
+
+      &:hover {
+        background-color: $purple;
+        transform: scale(1.2);
+      }
     }
   }
 
   .skills-green-shadow {
     position: absolute;
-    top: 450px;
+    top: 285px;
     left: 0px;
     overflow: hidden;
     z-index: 9999;

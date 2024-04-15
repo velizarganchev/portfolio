@@ -74,6 +74,10 @@ section {
             border-radius: 10px;
             background-color: transparent;
 
+            &:hover {
+              border: 1px solid $green;
+            }
+
             &::placeholder {
               color: white;
             }
@@ -89,7 +93,13 @@ section {
           input[type="checkbox"] {
             width: 24px;
             height: 24px;
-            accent-color: $dark_blue;
+            border-color: red;
+            // accent-color: $green;
+            // mix-blend-mode: multiply;
+            // outline: 2px auto $green;
+            &:checked {
+              color: red;
+            }
           }
 
           label {
@@ -117,10 +127,27 @@ section {
             border-radius: 10px;
             border: none;
             padding: 15px 30px;
-            background-color: $grey;
+            background-color: $green;
+            transition: transform 500ms ease-in-out;
+
+            &:hover {
+              background-color: $purple;
+              transform: scale(1.2);
+            }
           }
         }
       }
     }
   }
+}
+
+.disabled-button {
+  color: white;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px 30px;
+  background-color: $grey;
 }
