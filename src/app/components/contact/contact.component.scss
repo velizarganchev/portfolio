@@ -73,13 +73,18 @@ section {
             border: 1px solid $purple;
             border-radius: 10px;
             background-color: transparent;
-
+            cursor: pointer;
             &:hover {
               border: 1px solid $green;
             }
 
             &::placeholder {
               color: white;
+            }
+
+            &:focus {
+              outline: none;
+              border: 1px solid red;
             }
           }
         }
@@ -93,13 +98,14 @@ section {
           input[type="checkbox"] {
             width: 24px;
             height: 24px;
-            border-color: red;
-            // accent-color: $green;
+
+            accent-color: $dark_blue;
             // mix-blend-mode: multiply;
-            // outline: 2px auto $green;
-            &:checked {
-              color: red;
-            }
+            //outline: 2px auto $green;
+            // &:checked {
+            //   background: url("../../../assets/img/check.svg") no-repeat center /
+            //     75% auto;
+            // }
           }
 
           label {
