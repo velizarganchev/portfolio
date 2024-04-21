@@ -101,26 +101,55 @@ header {
     }
   }
 
-  .hero-links-container {
+  .hero-footer {
     position: relative;
     z-index: 9999;
-    @include dFlex($jc: flex-start, $g: 42px);
-    top: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
 
-    .hero-link {
-      cursor: pointer;
-      transition: transform 0.2s ease-in-out;
-      
-      &:hover {
-        transform: scale(1.5);
+    .hero-links-container {
+      @include dFlex($jc: flex-start, $g: 42px);
+
+      .hero-link {
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+
+      .hero-link-email {
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        cursor: pointer;
       }
     }
 
-    .hero-link-email {
-      font-size: 23px;
-      font-weight: 400;
-      line-height: 27.6px;
-      cursor: pointer;
+    .scroll-btn-container {
+      transform: rotate(90deg);
+      margin-bottom: 125px;
+      .scroll-down-btn {
+        color: white;
+        background-color: $dark_blue;
+        border: none;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 23px;
+        display: flex;
+        gap: 10px;
+
+        img {
+          transform: rotate(-90deg);
+        }
+
+        // &:hover{
+        //   cursor: pointer;
+        // }
+      }
     }
   }
 

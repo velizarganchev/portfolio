@@ -78,6 +78,10 @@ section {
   }
 }
 
-.reverse {
+.reverse-item {
   flex-direction: row-reverse !important;
+}
+
+.reverse-right-section {
+  align-items: flex-end !important;
 }

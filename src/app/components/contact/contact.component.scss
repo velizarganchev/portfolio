@@ -2,13 +2,14 @@
 
 section {
   width: 100%;
-  min-height: 85vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   color: white;
   background-color: $dark_blue;
+  overflow: hidden;
 
   .title-container {
     display: flex;
@@ -23,6 +24,7 @@ section {
   }
 
   .contact-container {
+    position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -44,6 +46,19 @@ section {
         span {
           font-weight: 700;
         }
+      }
+    }
+
+    .purple-shadow-footer-container {
+      position: absolute;
+      bottom: -405px;
+      left: -360px;
+      z-index: 8888;
+
+      > img {
+        width: 747px;
+        height: 902px;
+        transform: rotate(-111deg);
       }
     }
 
@@ -143,6 +158,31 @@ section {
           }
         }
       }
+      .scroll-up-btn-container {
+        margin-top: 55px;
+        width: 617px;
+        display: flex;
+        justify-content: flex-end;
+
+        .scroll-up-btn {
+          width: 39px;
+          height: 39px;
+          border: 2px solid white;
+          border-radius: 41px;
+          background: $dark_blue;
+          ng-icon {
+            color: white;
+            font-size: 20px;
+          }
+
+          &:hover {
+            border: 2px solid $green;
+            ng-icon {
+              color: $green;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -157,3 +197,8 @@ section {
   padding: 15px 30px;
   background-color: $grey;
 }
+
+// input.ng-invalid.ng-touched,
+// textarea.ng-invalid.ng-touched{
+//     border: 1px solid red;
+// }

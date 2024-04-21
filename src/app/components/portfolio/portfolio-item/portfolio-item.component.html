@@ -1,14 +1,14 @@
-<section [ngClass]="index % 2 == 0 ? 'reverse' : ''">
+<section [ngClass]="index % 2 != 0 ? 'reverse-item' : ''">
     <div class="left-section">
         <img [src]="project.imgPath" alt="">
     </div>
-    <div class="right-section">
+    <div class="right-section" [ngClass]="index % 2 != 0 ? 'reverse-right-section' : ''">
         <h3>{{project.title}}</h3>
         <p class="technologys">Angular | TypeScript | HTML | CSS | Firebase </p>
         <p class="description">{{project.description}}</p>
-            <div class="buttons-container">
-                <button class="life-test-btn">Life test</button>
-                <button class="github-btn">Github</button>
-            </div>
+        <div class="buttons-container">
+            <button class="life-test-btn">Life test</button>
+            <button class="github-btn">Github</button>
+        </div>
     </div>
 </section>

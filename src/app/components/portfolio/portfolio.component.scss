@@ -9,6 +9,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: clip;
+  z-index: 8888;
 
   .portfolio-header-container {
     width: 100%;
@@ -45,11 +47,39 @@ section {
     }
   }
 
+  .portfolio-purple-shadow-container {
+    position: absolute;
+    top: 925px;
+    right: 690px;
+    overflow: hidden;
+    z-index: 0;
+
+    > img {
+      width: 736px;
+      height: 848px;
+    }
+  }
+
   .portfolio-content {
+    position: relative;
+    z-index: 9999;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 80px;
     margin-top: 200px;
+
+    .portfolio-green-shadow-container {
+      position: absolute;
+      bottom: -300px;
+      left: 870px;
+      z-index: -1;
+
+      > img {
+        width: 736px;
+        height: 848px;
+        transform: rotate(75deg);
+      }
+    }
   }
 }

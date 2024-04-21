@@ -13,7 +13,14 @@
             <h4>Explore a selection of my work here - Interact with projects to see my skills in action.</h4>
         </div>
     </div>
+    <div class="portfolio-purple-shadow-container">
+        <img src="../../../assets/img/portfolio-purple-shadow.svg" alt="Purple Shadow">
+    </div>
+
     <div class="portfolio-content">
         <app-portfolio-item *ngFor="let project of projects; let i = index" [srProject]="project" [srIndex]="i" />
+        <div class="portfolio-green-shadow-container">
+            <img src="../../../assets/img/green-shadow-canva-design.svg" alt="Green Shadow">
+        </div>
     </div>
 </section>
