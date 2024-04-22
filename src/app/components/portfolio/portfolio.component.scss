@@ -10,7 +10,6 @@ section {
   justify-content: center;
   align-items: center;
   overflow-x: clip;
-  z-index: 8888;
 
   .portfolio-header-container {
     width: 100%;
@@ -20,26 +19,29 @@ section {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    background: transparent;
+    z-index: 10000;
 
     .portfolio-header-title {
       display: flex;
       align-items: center;
       gap: 50px;
 
-      > h2 {
+      >h2 {
         margin: 10px 0px;
         font-size: 90px;
         line-height: 108px;
         font-weight: 700;
       }
     }
+
     .subtitle-container {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
 
-      > h4 {
+      >h4 {
         font-size: 16px;
         font-weight: 400;
         line-height: 19.2px;
@@ -54,7 +56,7 @@ section {
     overflow: hidden;
     z-index: 0;
 
-    > img {
+    >img {
       width: 736px;
       height: 848px;
     }
@@ -75,7 +77,7 @@ section {
       left: 870px;
       z-index: -1;
 
-      > img {
+      >img {
         width: 736px;
         height: 848px;
         transform: rotate(75deg);

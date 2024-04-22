@@ -1,9 +1,10 @@
 @import "../../../styles.scss";
 
 .about-container {
-  height: 80vh;
+  height: 100vh;
   position: relative;
   z-index: 9999;
+  padding: 15px;
   background-color: $dark_blue;
   color: white;
   @include dFlex($g: 20px);
