@@ -1,11 +1,13 @@
-$green: #70E61C;
-$ligt_blue: #1CDAE6;
-$purple: #9747FF;
-$dark_blue: #141D2F;
-$dark_blue_transparenc: #141D2F;
-$grey: #B6B6B6;
+$green: #70e61c;
+$ligt_blue: #1cdae6;
+$purple: #9747ff;
+$dark_blue: #141d2f;
+$dark_blue_transparenc: #141d2f;
+$grey: #b6b6b6;
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 @mixin dFlex($jc: center, $ai: center, $g: 0px) {
   display: flex;

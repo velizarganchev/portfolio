@@ -2,11 +2,10 @@
 
 section {
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   color: white;
   background-color: $dark_blue;
   overflow: hidden;
@@ -16,15 +15,26 @@ section {
     width: 100%;
     gap: 50px;
 
-    >h2 {
+    > h2 {
       font-size: 90px;
       font-weight: 700;
       line-height: 108px;
+
+      @media (max-width: 1400px) {
+        font-size: 60px;
+        line-height: 64px;
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 50px;
+        line-height: 54px;
+      }
     }
   }
 
   .contact-container {
     position: relative;
+    max-width: 1440px;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -32,9 +42,7 @@ section {
     margin-bottom: 45px;
 
     .contact-left {
-      width: 50%;
-
-      >h3 {
+      > h3 {
         font-size: 32px;
         font-weight: 700;
         line-height: 38.4px;
@@ -57,7 +65,7 @@ section {
       left: -360px;
       z-index: 8888;
 
-      >img {
+      > img {
         width: 747px;
         height: 902px;
         transform: rotate(-111deg);
@@ -65,10 +73,11 @@ section {
     }
 
     .contact-right {
+      width: 100%;
       form {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         gap: 20px;
 
@@ -78,10 +87,9 @@ section {
           flex-direction: column;
           gap: 20px;
 
-          >input,
+          > input,
           textarea {
             font-family: "Poppins", "Helvetica Neue", sans-serif;
-            width: 100%;
             padding: 15px 25px;
             color: white;
             font-size: 16px;
@@ -164,8 +172,8 @@ section {
       }
 
       .scroll-up-btn-container {
-        margin-top: 55px;
-        width: 617px;
+        margin-top: 40px;
+        width: 100%;
         display: flex;
         justify-content: flex-end;
 

@@ -2,6 +2,7 @@
 
 section {
   position: relative;
+  padding-top: 200px;
   height: auto;
   background-color: $dark_blue;
   color: white;
@@ -14,7 +15,7 @@ section {
   .portfolio-header-container {
     width: 100%;
     position: absolute;
-    top: 0px;
+    top: 170px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -27,11 +28,21 @@ section {
       align-items: center;
       gap: 50px;
 
-      >h2 {
+      > h2 {
         margin: 10px 0px;
         font-size: 90px;
         line-height: 108px;
         font-weight: 700;
+
+        @media (max-width: 1400px) {
+          font-size: 60px;
+          line-height: 64px;
+        }
+        
+        @media (max-width: 1200px) {
+          font-size: 50px;
+          line-height: 54px;
+        }
       }
     }
 
@@ -41,7 +52,7 @@ section {
       justify-content: center;
       align-items: center;
 
-      >h4 {
+      > h4 {
         font-size: 16px;
         font-weight: 400;
         line-height: 19.2px;
@@ -51,12 +62,12 @@ section {
 
   .portfolio-purple-shadow-container {
     position: absolute;
-    top: 925px;
+    top: 1110px;
     right: 690px;
     overflow: hidden;
     z-index: 0;
 
-    >img {
+    > img {
       width: 736px;
       height: 848px;
     }
@@ -68,7 +79,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 80px;
+    gap: 110px;
     margin-top: 200px;
 
     .portfolio-green-shadow-container {
@@ -77,7 +88,7 @@ section {
       left: 870px;
       z-index: -1;
 
-      >img {
+      > img {
         width: 736px;
         height: 848px;
         transform: rotate(75deg);
