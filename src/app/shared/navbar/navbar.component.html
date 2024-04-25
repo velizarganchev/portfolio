@@ -2,10 +2,21 @@
     <a href="#hero">
         <img src="../../../assets/img/logo.svg" alt="Logo">
     </a>
-    <button class="responsive-nav-btn"><ng-icon name="heroBars3"></ng-icon></button>
+    <button class="responsive-nav-btn" *ngIf="showNavigation" (click)="showNav()"><ng-icon name="heroBars3"></ng-icon></button>
     <div class="nav-links-container">
         <a href="#about">About me</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
     </div>
 </nav>
+<div class="responsive-nav-container" [ngStyle]="{'display':( !showNavigation ? '' : 'none')}">
+    <div class="close-btn-container">
+        <button class="close-btn" *ngIf="!showNavigation" (click)="showNav()"><ng-icon name="heroXMark"></ng-icon></button>
+    </div>
+    <div class="nav-links-mobile-container">
+        <a href="#about">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>

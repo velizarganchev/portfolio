@@ -35,6 +35,7 @@ nav {
   @media (max-width: 431px) {
     padding: 37px 25px;
   }
+
   .nav-links-container {
     @include dFlex($g: 29px);
     font-size: 23px;
@@ -51,6 +52,48 @@ nav {
 
     @media (max-width: 821px) {
       display: none;
+    }
+  }
+}
+
+.responsive-nav-container {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(20, 29, 47, 0.8);
+  z-index: 22222;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .close-btn-container {
+    position: absolute;
+    right: 100px;
+    top: 38px;
+
+    button {
+      background: transparent;
+      color: white;
+      border: none;
+      font-size: 35px;
+      cursor: pointer;
+    }
+  }
+  .nav-links-mobile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 29px;
+
+    > a {
+      color: white;
+      font-size: 23px;
+      font-weight: 400;
+      line-height: 27.6px;
+      text-decoration: none;
     }
   }
 }
