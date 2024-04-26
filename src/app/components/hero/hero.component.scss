@@ -5,7 +5,7 @@ header {
   flex-direction: column;
   background-color: $dark_blue;
   color: white;
-  margin-top: 80px;
+  padding-top: 80px;
 
   .hero-container {
     display: flex;
@@ -22,19 +22,15 @@ header {
         left: -10px;
         top: 150px;
 
-        @media (max-width: 1400px) {
-          left: -20px;
-        }
-
-        @media (max-width: 431px) {
-          width: 400px;
+        @media (max-width: 870px) {
+          width: 100%;
         }
       }
 
       .hero-photo {
         position: relative;
-        @media (max-width: 431px) {
-          width: 400px;
+        @media (max-width: 675px) {
+          width: 100%;
         }
       }
     }
@@ -60,9 +56,12 @@ header {
           @media (max-width: 1400px) {
             font-size: 30px;
           }
+          @media (max-width: 520px) {
+            font-size: 27px;
+          }
 
           @media (max-width: 431px) {
-            font-size: 26px;
+            font-size: 24px;
           }
         }
 
@@ -82,8 +81,12 @@ header {
               line-height: 50px;
             }
 
+            @media (max-width: 520px) {
+              font-size: 42px;
+            }
+
             @media (max-width: 431px) {
-              font-size: 40px;
+              font-size: 33px;
               line-height: 44px;
             }
           }
@@ -100,8 +103,12 @@ header {
               line-height: 26px;
             }
 
+            @media (max-width: 520px) {
+              font-size: 27px;
+            }
+
             @media (max-width: 431px) {
-              font-size: 26px;
+              font-size: 24px;
             }
           }
         }
@@ -150,12 +157,17 @@ header {
         font-weight: 400;
         line-height: 27.6px;
         cursor: pointer;
+
+        @media (max-width: 675px) {
+          display: none;
+        }
       }
     }
 
     .scroll-btn-container {
       transform: rotate(90deg);
       margin-bottom: 125px;
+
       .scroll-down-btn {
         color: white;
         background-color: transparent;
@@ -170,9 +182,9 @@ header {
           transform: rotate(-90deg);
         }
 
-        // &:hover{
-        //   cursor: pointer;
-        // }
+        @media (max-width: 821px) {
+          display: none;
+        }
       }
     }
   }
@@ -196,6 +208,14 @@ header {
 
     @media (max-width: 1140px) {
       top: 475px;
+    }
+
+    @media (max-width: 870px) {
+      top: 527px;
+    }
+
+    @media (max-width: 675px) {
+      top: 425px;
     }
   }
 }
