@@ -21,12 +21,15 @@ section {
       line-height: 38.4px;
       color: $purple;
     }
-
     .technologys {
       font-size: 23px;
       font-weight: 400;
       line-height: 27.6px;
       color: $green;
+
+      @media (max-width: 431px) {
+        width: 50%;
+      }
     }
 
     .description {
@@ -34,6 +37,10 @@ section {
       font-weight: 400;
       line-height: 19.2px;
       color: white;
+
+      @media (max-width: 431px) {
+        width: 50%;
+      }
     }
 
     .buttons-container {
@@ -74,14 +81,43 @@ section {
           background-color: $green;
         }
       }
+
+      @media (max-width: 431px) {
+        width: 50%;
+      }
     }
+
+    @media (max-width: 1140px) {
+      width: 100%;
+      height: auto;
+      align-items: center;
+      > p {
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 1140px) {
+    flex-direction: column;
   }
 }
 
 .reverse-item {
   flex-direction: row-reverse !important;
+
+  @media (max-width: 1140px) {
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
 }
 
 .reverse-right-section {
   align-items: flex-end !important;
+
+  @media (max-width: 1140px) {
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
 }

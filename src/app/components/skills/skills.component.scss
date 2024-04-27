@@ -7,7 +7,7 @@ section {
   color: white;
   @include dFlex($g: 54px, $ai: baseline);
   flex-direction: row-reverse;
-  padding-top: 150px;
+  padding-top: 85px;
 
   .left-section {
     width: 721px;
@@ -105,7 +105,7 @@ section {
 
     > img {
       position: absolute;
-      top: 190px;
+      top: 127px;
       right: 0;
     }
 
@@ -157,12 +157,14 @@ section {
     z-index: 9999;
 
     @media (max-width: 1140px) {
-      top: 480px;
-      left: -50px;
+      top: 327px;
+      left: -113px;
     }
   }
 
   .responsiv-btn-container {
+    margin: 20px 0;
+    z-index: 10000;
     > button {
       padding: 15px 30px;
       border-radius: 10px;
