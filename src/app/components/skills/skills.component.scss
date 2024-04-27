@@ -6,6 +6,7 @@ section {
   background-color: $dark_blue;
   color: white;
   @include dFlex($g: 54px, $ai: baseline);
+  flex-direction: row-reverse;
   padding-top: 150px;
 
   .left-section {
@@ -36,7 +37,28 @@ section {
           cursor: pointer;
           animation: bounce 1s ease infinite;
         }
+
+        @media (max-width: 675px) {
+          width: 42px;
+          height: 42px;
+        }
       }
+
+      @media (max-width: 675px) {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
+
+    @media (max-width: 675px) {
+      gap: 45px;
+    }
+
+    @media (max-width: 431px) {
+      gap: 10px;
     }
   }
 
@@ -75,6 +97,10 @@ section {
         font-size: 50px;
         line-height: 54px;
       }
+
+      @media (max-width: 431px) {
+        font-size: 48px;
+      }
     }
 
     > img {
@@ -87,6 +113,11 @@ section {
       font-size: 16px;
       font-weight: 400;
       line-height: 19.2px;
+      text-align: end;
+
+      @media (max-width: 1140px) {
+        width: 60%;
+      }
     }
 
     button {
@@ -104,6 +135,17 @@ section {
         background-color: $purple;
         transform: scale(1.2);
       }
+
+      @media (max-width: 1140px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1140px) {
+      width: 100%;
+      align-items: flex-end;
+      margin-right: 140px;
+      padding: 14px;
     }
   }
 
@@ -113,8 +155,42 @@ section {
     left: 0px;
     overflow: hidden;
     z-index: 9999;
+
+    @media (max-width: 1140px) {
+      top: 480px;
+      left: -50px;
+    }
+  }
+
+  .responsiv-btn-container {
+    > button {
+      padding: 15px 30px;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      font-size: 23px;
+      font-weight: 400;
+      line-height: 27.6px;
+      background-color: $green;
+      transition: transform 500ms ease-in-out;
+
+      &:hover {
+        background-color: $purple;
+        transform: scale(1.2);
+      }
+
+      @media (max-width: 1140px) {
+        display: block;
+      }
+
+      @media (min-width: 1140px) {
+        display: none;
+      }
+    }
   }
 
   @media (max-width: 1140px) {
+    flex-direction: column;
+    align-items: center;
   }
 }
