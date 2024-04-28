@@ -19,6 +19,9 @@ footer {
     align-items: center;
     justify-content: space-between;
 
+    > img {
+      width: 216px;
+    }
     nav {
       width: 174px;
       display: flex;
@@ -38,6 +41,12 @@ footer {
       font-size: 23px;
       font-weight: 400;
       line-height: 27.6px;
+    }
+
+    @media (max-width: 1140px) {
+      flex-direction: column;
+      gap: 35px;
+      margin-bottom: 35px;
     }
   }
 
@@ -70,7 +79,26 @@ footer {
 
       &:hover::after {
         width: 45px;
+        @media (max-width: 1140px) {
+          left: 45%;
+        }
+
+        @media (max-width: 820px) {
+          left: 42%;
+        }
+
+        @media (max-width: 431px) {
+          left: 30%;
+        }
+
+        @media (max-width: 431px) {
+          left: 26%;
+        }
       }
+    }
+
+    @media (max-width: 1140px) {
+      justify-content: center;
     }
   }
 }
