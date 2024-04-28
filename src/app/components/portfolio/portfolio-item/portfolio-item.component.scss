@@ -6,6 +6,12 @@ section {
   align-items: center;
   color: white;
 
+  .left-section {
+    > img {
+      width: 361px;
+    }
+  }
+
   .right-section {
     display: flex;
     flex-direction: column;
@@ -20,6 +26,10 @@ section {
       font-weight: 700;
       line-height: 38.4px;
       color: $purple;
+
+      @media (max-width: 361px) {
+        font-size: 28px;
+      }
     }
     .technologys {
       font-size: 23px;
@@ -28,7 +38,11 @@ section {
       color: $green;
 
       @media (max-width: 431px) {
-        width: 50%;
+        width: 80%;
+      }
+
+      @media (max-width: 361px) {
+        font-size: 16px;
       }
     }
 
@@ -39,7 +53,7 @@ section {
       color: white;
 
       @media (max-width: 431px) {
-        width: 50%;
+        width: 80%;
       }
     }
 
@@ -63,6 +77,11 @@ section {
           cursor: pointer;
           background-color: $green;
         }
+
+        @media (max-width: 431px) {
+          padding: 8px 16px;
+          font-size: 20px;
+        }
       }
 
       .github-btn {
@@ -80,10 +99,19 @@ section {
           cursor: pointer;
           background-color: $green;
         }
+
+        @media (max-width: 431px) {
+          padding: 8px 16px;
+          font-size: 20px;
+        }
       }
 
       @media (max-width: 431px) {
-        width: 50%;
+        width: 80%;
+      }
+
+      @media (max-width: 431px) {
+        width: 65%;
       }
     }
 

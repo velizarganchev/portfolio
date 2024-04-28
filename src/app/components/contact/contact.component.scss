@@ -9,6 +9,7 @@ section {
   color: white;
   background-color: $dark_blue;
   overflow: hidden;
+  padding-top: 72px;
 
   .title-container {
     display: flex;
@@ -32,6 +33,10 @@ section {
 
       @media (max-width: 431px) {
         font-size: 48px;
+      }
+
+      @media (max-width: 361px) {
+        font-size: 36px;
       }
     }
 
@@ -188,6 +193,10 @@ section {
               background-color: $purple;
               transform: scale(1.2);
             }
+
+            @media (max-width: 431px) {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -199,6 +208,10 @@ section {
         justify-content: flex-end;
 
         .scroll-up-btn {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 39px;
           height: 39px;
           border: 2px solid white;
@@ -208,6 +221,7 @@ section {
           ng-icon {
             color: white;
             font-size: 20px;
+            margin-bottom: 5px;
           }
 
           &:hover {

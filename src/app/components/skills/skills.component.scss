@@ -7,7 +7,7 @@ section {
   color: white;
   @include dFlex($g: 54px, $ai: baseline);
   flex-direction: row-reverse;
-  padding-top: 85px;
+  padding-top: 122px;
 
   .left-section {
     width: 721px;
@@ -60,6 +60,10 @@ section {
     @media (max-width: 431px) {
       gap: 10px;
     }
+
+    @media (max-width: 361px) {
+      gap: 0px;
+    }
   }
 
   @keyframes bounce {
@@ -79,7 +83,7 @@ section {
   }
   .right-section {
     width: 471px;
-    @include dFlex();
+    @include dFlex($g: 23px);
     flex-direction: column;
 
     > h2 {
@@ -101,12 +105,20 @@ section {
       @media (max-width: 431px) {
         font-size: 48px;
       }
+
+      @media (max-width: 361px) {
+        font-size: 36px;
+      }
     }
 
     > img {
       position: absolute;
-      top: 127px;
+      top: 176px;
       right: 0;
+
+      @media (max-width: 1401px) {
+        top: 161px;
+      }
     }
 
     > h4 {
@@ -116,30 +128,55 @@ section {
       text-align: end;
 
       @media (max-width: 1140px) {
-        width: 60%;
+        width: 78%;
       }
     }
 
-    button {
-      padding: 15px 30px;
-      border-radius: 10px;
-      border: none;
-      color: white;
-      font-size: 23px;
-      font-weight: 400;
-      line-height: 27.6px;
-      background-color: $green;
-      transition: transform 500ms ease-in-out;
+    .btn-container {
+      margin-top: 11px;
+      > a {
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        background-color: $green;
+        transition: transform 500ms ease-in-out;
 
-      &:hover {
-        background-color: $purple;
-        transform: scale(1.2);
-      }
+        &:hover {
+          background-color: $purple;
+          transform: scale(1.2);
+        }
 
-      @media (max-width: 1140px) {
-        display: none;
+        @media (max-width: 1140px) {
+          display: none;
+        }
       }
     }
+
+    // button {
+    //   padding: 15px 30px;
+    //   border-radius: 10px;
+    //   border: none;
+    //   color: white;
+    //   font-size: 23px;
+    //   font-weight: 400;
+    //   line-height: 27.6px;
+    //   background-color: $green;
+    //   transition: transform 500ms ease-in-out;
+
+    //   &:hover {
+    //     background-color: $purple;
+    //     transform: scale(1.2);
+    //   }
+
+    //   @media (max-width: 1140px) {
+    //     display: none;
+    //   }
+    // }
 
     @media (max-width: 1140px) {
       width: 100%;
@@ -188,11 +225,19 @@ section {
       @media (min-width: 1140px) {
         display: none;
       }
+
+      @media (max-width: 361px) {
+        font-size: 16px;
+      }
     }
   }
 
   @media (max-width: 1140px) {
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (max-width: 361px) {
+    gap: 40px;
   }
 }
