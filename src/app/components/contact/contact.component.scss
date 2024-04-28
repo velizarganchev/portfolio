@@ -29,6 +29,14 @@ section {
         font-size: 50px;
         line-height: 54px;
       }
+
+      @media (max-width: 431px) {
+        font-size: 48px;
+      }
+    }
+
+    @media (max-width: 431px) {
+      gap: 10px;
     }
   }
 
@@ -46,6 +54,11 @@ section {
         font-size: 32px;
         font-weight: 700;
         line-height: 38.4px;
+
+        @media (max-width: 431px) {
+          text-align: center;
+          font-size: 23px;
+        }
       }
 
       .contact-left-content {
@@ -55,6 +68,9 @@ section {
 
         span {
           font-weight: 700;
+        }
+
+        @media (max-width: 431px) {
         }
       }
     }
@@ -73,6 +89,7 @@ section {
     }
 
     .contact-right {
+      z-index: 9999;
       width: 100%;
       form {
         display: flex;
@@ -112,6 +129,10 @@ section {
               outline: none;
               border: 1px solid red;
             }
+          }
+
+          @media (max-width: 1140px) {
+            width: 100%;
           }
         }
 
@@ -198,6 +219,13 @@ section {
           }
         }
       }
+    }
+
+    @media (max-width: 1140px) {
+      flex-direction: column;
+    }
+    @media (max-width: 551px) {
+      width: 85%;
     }
   }
 }
