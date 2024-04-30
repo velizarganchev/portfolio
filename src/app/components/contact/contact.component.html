@@ -19,25 +19,26 @@
         <div class="contact-right">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="inputs-container">
-                    <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
-                        placeholder="Your name" required>
-                    @if (!name.valid && name.touched) {
-                    <img class="exclamation-name" src="../../../assets/img/exclamation-mark.svg" alt="">
-                    <p>Your name is required</p>
+                    <input
+                        [ngClass]="{'exclamation-input': !name.valid && name.touched, 'check-input': name.valid && name.touched}"
+                        #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name"
+                        required>
+                    <p class="error-message" *ngIf="!name.valid && name.touched">Your name is required</p>
 
-                    }
-                    <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email"
+                    <input
+                        [ngClass]="{'exclamation-input': !email.valid && email.touched, 'check-input': email.valid && email.touched}"
+                        #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email"
                         placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                     @if (!email.valid && email.touched) {
-                    <img class="exclamation-email" src="../../../assets/img/exclamation-mark.svg" alt="">
-                    <p>Your email is required</p>
-
+                    <p class="error-message">Your email is required</p>
                     }
-                    <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="" cols="30"
-                        rows="10" placeholder="Your message" required></textarea>
+
+                    <textarea
+                        [ngClass]="{'exclamation-input': !message.valid && message.touched, 'check-input': message.valid && message.touched}"
+                        #message="ngModel" [(ngModel)]="contactData.message" name="message" id="" cols="30" rows="10"
+                        placeholder="Your message" required></textarea>
                     @if (!message.valid && message.touched) {
-                    <img class="exclamation-message" src="../../../assets/img/exclamation-mark.svg" alt="">
-                    <p>Your message is empty</p>
+                    <p class="error-message">Your message is empty</p>
                     }
                 </div>
                 <div class="checkbox-container">

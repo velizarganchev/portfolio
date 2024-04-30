@@ -110,26 +110,6 @@ section {
           flex-direction: column;
           gap: 20px;
 
-          > img {
-            width: 20px;
-            height: 20px;
-            position: absolute;
-          }
-
-          .exclamation-name {
-            top: 13px;
-            right: 15px;
-          }
-
-          .exclamation-email {
-            top: 143px;
-            right: 15px;
-          }
-
-          .exclamation-message {
-            top: 276px;
-            right: 15px;
-          }
           > input,
           textarea {
             font-family: "Poppins", "Helvetica Neue", sans-serif;
@@ -157,7 +137,39 @@ section {
             }
           }
 
+          input:-webkit-autofill,
+          input:-webkit-autofill:hover,
+          input:-webkit-autofill:focus,
+          input:-webkit-autofill:active {
+            -webkit-text-fill-color: white !important;
+            -webkit-box-shadow: 0 0 0 30px $dark_blue inset !important;
+          }
+
+          .exclamation-input {
+            outline: none;
+            border: 1px solid red;
+            background-image: url("../../../assets/img/exclamation-mark.svg") !important;
+            background-size: 25px 25px;
+            background-position: right top;
+            background-position-x: 96%;
+            background-position-y: 13px;
+            background-repeat: no-repeat;
+            padding-right: 40px;
+          }
+          .check-input {
+            outline: none;
+            border: 1px solid $green;
+            background-image: url("../../../assets/img/check-input.svg") !important;
+            background-size: 25px 25px;
+            background-position: right top;
+            background-position-x: 96%;
+            background-position-y: 13px;
+            background-repeat: no-repeat;
+            padding-right: 30px;
+          }
+
           > p {
+            font-size: 16px;
             color: red;
             padding: 8px;
             margin-top: -20px;
@@ -282,7 +294,19 @@ section {
   background-color: $grey;
 }
 
-// input.ng-invalid.ng-touched,
-// textarea.ng-invalid.ng-touched{
-//     border: 1px solid red;
-// }
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-message {
+  opacity: 0;
+  animation: slideIn 0.7s forwards;
+}
+
