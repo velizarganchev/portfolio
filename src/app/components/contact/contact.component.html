@@ -22,29 +22,29 @@
                     <input
                         [ngClass]="{'exclamation-input': !name.valid && name.touched, 'check-input': name.valid && name.touched}"
                         #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name"
-                        required>
+                        minlength="4" required>
                     <p class="error-message" *ngIf="!name.valid && name.touched">Your name is required</p>
 
                     <input
                         [ngClass]="{'exclamation-input': !email.valid && email.touched, 'check-input': email.valid && email.touched}"
                         #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email"
                         placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                    @if (!email.valid && email.touched) {
-                    <p class="error-message">Your email is required</p>
-                    }
+                    <p *ngIf="!email.valid && email.touched" class="error-message">Your email is required</p>
 
                     <textarea
                         [ngClass]="{'exclamation-input': !message.valid && message.touched, 'check-input': message.valid && message.touched}"
                         #message="ngModel" [(ngModel)]="contactData.message" name="message" id="" cols="30" rows="10"
                         placeholder="Your message" required></textarea>
-                    @if (!message.valid && message.touched) {
-                    <p class="error-message">Your message is empty</p>
-                    }
+                    <p *ngIf="!message.valid && message.touched" class="error-message">Your message is empty</p>
                 </div>
                 <div class="checkbox-container">
-                    <input type="checkbox" id="privacy" name="privacy" value="agree">
-                    <label for="privacy">I've read the <span>privacy policy</span> and agree to the processing of my
-                        data as outlined.</label><br>
+                    <div class="checkbox-input">
+                        <input #privacy [(ngModel)]="contactData.privacy" type="checkbox" id="privacy" name="privacy"
+                            value="agree">
+                        <label for="privacy">I've read the <span>privacy policy</span> and agree to the processing of my
+                            data as outlined.</label><br>
+                    </div>
+                    <p *ngIf="!privacy.checked" class="error-message">Please accept the privacy policy.</p>
                 </div>
                 <div class="button-container">
                     <button type="submit">Send message :&#41;</button>

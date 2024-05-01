@@ -26,6 +26,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
+    privacy: '',
   };
 
   onSubmit(contactForm: NgForm) {
