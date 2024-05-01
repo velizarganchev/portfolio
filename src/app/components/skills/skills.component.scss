@@ -12,13 +12,14 @@ section {
   .left-section {
     width: 721px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 70px;
     z-index: 9999;
 
     .icon-container {
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -134,6 +135,7 @@ section {
 
     .btn-container {
       margin-top: 11px;
+      transition: transform 500ms ease-in-out;
       > a {
         text-decoration: none;
         padding: 15px 30px;
@@ -144,39 +146,20 @@ section {
         font-weight: 400;
         line-height: 27.6px;
         background-color: $green;
-        transition: transform 500ms ease-in-out;
 
         &:hover {
           background-color: $purple;
-          transform: scale(1.2);
         }
 
         @media (max-width: 1140px) {
           display: none;
         }
       }
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
-
-    // button {
-    //   padding: 15px 30px;
-    //   border-radius: 10px;
-    //   border: none;
-    //   color: white;
-    //   font-size: 23px;
-    //   font-weight: 400;
-    //   line-height: 27.6px;
-    //   background-color: $green;
-    //   transition: transform 500ms ease-in-out;
-
-    //   &:hover {
-    //     background-color: $purple;
-    //     transform: scale(1.2);
-    //   }
-
-    //   @media (max-width: 1140px) {
-    //     display: none;
-    //   }
-    // }
 
     @media (max-width: 1140px) {
       width: 100%;
@@ -202,7 +185,10 @@ section {
   .responsiv-btn-container {
     margin: 20px 0;
     z-index: 10000;
-    > button {
+    transition: transform 500ms ease-in-out;
+
+    > a {
+      text-decoration: none;
       padding: 15px 30px;
       border-radius: 10px;
       border: none;
@@ -215,7 +201,6 @@ section {
 
       &:hover {
         background-color: $purple;
-        transform: scale(1.2);
       }
 
       @media (max-width: 1140px) {
@@ -229,6 +214,10 @@ section {
       @media (max-width: 361px) {
         font-size: 16px;
       }
+    }
+
+    &:hover {
+      transform: scale(1.2);
     }
   }
 
