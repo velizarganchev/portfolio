@@ -16,7 +16,7 @@ section {
     width: 100%;
     gap: 50px;
 
-    >h2 {
+    > h2 {
       font-size: 90px;
       font-weight: 700;
       line-height: 108px;
@@ -55,7 +55,7 @@ section {
     margin-bottom: 45px;
 
     .contact-left {
-      >h3 {
+      > h3 {
         font-size: 32px;
         font-weight: 700;
         line-height: 38.4px;
@@ -75,7 +75,8 @@ section {
           font-weight: 700;
         }
 
-        @media (max-width: 431px) {}
+        @media (max-width: 431px) {
+        }
       }
     }
 
@@ -85,7 +86,7 @@ section {
       left: -360px;
       z-index: 8888;
 
-      >img {
+      > img {
         width: 747px;
         height: 902px;
         transform: rotate(-111deg);
@@ -110,7 +111,7 @@ section {
           flex-direction: column;
           gap: 20px;
 
-          >input,
+          > input,
           textarea {
             font-family: "Poppins", "Helvetica Neue", sans-serif;
             padding: 15px 25px;
@@ -169,7 +170,7 @@ section {
             padding-right: 30px;
           }
 
-          >p {
+          > p {
             font-size: 16px;
             color: red;
             padding: 8px;
@@ -189,7 +190,6 @@ section {
           gap: 10px;
 
           .checkbox-input {
-
             display: flex;
             align-items: center;
             justify-content: center;
@@ -215,7 +215,7 @@ section {
 
             input[type="checkbox"]:not(:disabled):checked {
               border-color: $green;
-              background-image: url('../../../assets/img/check.svg');
+              background-image: url("../../../assets/img/check.svg");
             }
 
             input[type="checkbox"]:disabled {
@@ -224,17 +224,20 @@ section {
             }
 
             input[type="checkbox"]:disabled:checked {
-              background-image: url('../../../assets/img/check-copy.svg');
+              background-image: url("../../../assets/img/check-copy.svg");
             }
 
             label {
               font-size: 14px;
-              font-weight: 400px;
+              font-weight: 400;
               line-height: 16.8px;
 
               span {
                 color: $purple;
                 cursor: pointer;
+              }
+              @media (max-width: 431px) {
+                width: 100%;
               }
             }
 
@@ -244,7 +247,7 @@ section {
             }
           }
 
-          >p {
+          > p {
             font-size: 14px;
             font-weight: 400;
             line-height: 16.8px;
@@ -256,7 +259,6 @@ section {
             width: 100%;
             justify-content: flex-start;
           }
-
         }
 
         .button-container {
@@ -265,7 +267,7 @@ section {
           align-items: center;
           justify-content: center;
 
-          button {
+          .send-button {
             color: white;
             font-size: 23px;
             font-weight: 400;

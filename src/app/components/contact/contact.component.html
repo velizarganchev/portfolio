@@ -33,21 +33,22 @@
 
                     <textarea
                         [ngClass]="{'exclamation-input': !message.valid && message.touched, 'check-input': message.valid && message.touched}"
-                        #message="ngModel" [(ngModel)]="contactData.message" name="message" id="" cols="30" rows="10"
+                        #message="ngModel" [(ngModel)]="contactData.message" name="message" cols="30" rows="10"
                         placeholder="Your message" required></textarea>
                     <p *ngIf="!message.valid && message.touched" class="error-message">Your message is empty</p>
                 </div>
                 <div class="checkbox-container">
                     <div class="checkbox-input">
-                        <input #privacy [(ngModel)]="contactData.privacy" type="checkbox" id="privacy" name="privacy"
-                            value="agree">
+                        <input #privacy [(ngModel)]="contactData.privacy" type="checkbox" name="privacy" value="agree" 
+                        required>
                         <label for="privacy">I've read the <span>privacy policy</span> and agree to the processing of my
                             data as outlined.</label><br>
                     </div>
-                    <p *ngIf="!privacy.checked" class="error-message">Please accept the privacy policy.</p>
+                    <p *ngIf="!privacy.checked && contactForm.touched" class="error-message">Please accept the privacy policy.</p>
                 </div>
                 <div class="button-container">
-                    <button type="submit">Send message :&#41;</button>
+                    <button [ngClass]="contactForm.valid ? 'send-button' : 'disabled-button'"
+                        [disabled]="!contactForm.valid" type="submit">Send message :&#41;</button>
                 </div>
             </form>
             <div class="scroll-up-btn-container">

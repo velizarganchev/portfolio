@@ -20,7 +20,6 @@ import { heroArrowSmallUp } from '@ng-icons/heroicons/outline';
   styleUrl: './contact.component.scss',
   viewProviders: [provideIcons({ heroArrowSmallUp })],
 })
-
 export class ContactComponent {
   contactData = {
     name: '',
