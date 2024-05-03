@@ -10,9 +10,9 @@
         <a href="#portfolio">Portfolio</a>
     </div>
 </nav>
-<div class="responsive-nav-container" [ngStyle]="{'display':( !showNavigation ? 'flex' : 'none')}">
+<div class="responsive-nav-container" (click)="showNav()" [ngStyle]="{'display':( !showNavigation ? 'flex' : 'none')}">
     <div class="close-btn-container">
-        <button class="close-btn" *ngIf="!showNavigation" (click)="showNav()"><ng-icon
+        <button class="close-btn" appClickStopPropagation *ngIf="!showNavigation" (click)="showNav()"><ng-icon
                 name="heroXMark"></ng-icon></button>
     </div>
     <div class="nav-links-mobile-container">
