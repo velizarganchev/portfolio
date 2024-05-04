@@ -4,11 +4,12 @@
     </div>
     <div class="right-section" [ngClass]="index % 2 != 0 ? 'reverse-right-section' : ''">
         <h3>{{project.title}}</h3>
-        <p class="technologys">Angular | TypeScript | HTML | CSS | Firebase </p>
+        <p class="technologys">{{project.technologys[0]}} | {{project.technologys[1]}} | {{project.technologys[2]}} |
+            {{project.technologys[3]}} | {{project.technologys[4]}}</p>
         <p class="description">{{project.description}}</p>
         <div class="buttons-container">
-            <a href="#" class="life-test-btn">Life test</a>
-            <a href="#" class="github-btn">Github</a>
+            <a href="{{project.links[0]}}" class="life-test-btn">Life test</a>
+            <a href="{{project.links[1]}}" class="github-btn">Github</a>
         </div>
     </div>
 </section>

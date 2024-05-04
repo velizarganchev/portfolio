@@ -15,6 +15,7 @@ header {
     @media (max-width: 1140px) {
       flex-direction: column;
     }
+
     .hero-img-container {
       .hero-shadows {
         position: absolute;
@@ -29,6 +30,7 @@ header {
 
       .hero-photo {
         position: relative;
+
         @media (max-width: 675px) {
           width: 100%;
         }
@@ -47,7 +49,7 @@ header {
         justify-content: center;
         gap: 0px;
 
-        > h4 {
+        >h4 {
           transform: rotate(-90deg);
           margin: 0px;
           font-size: 54px;
@@ -56,6 +58,7 @@ header {
           @media (max-width: 1400px) {
             font-size: 30px;
           }
+
           @media (max-width: 520px) {
             font-size: 27px;
           }
@@ -126,7 +129,7 @@ header {
         }
       }
 
-      > a {
+      >a {
         text-decoration: none;
         color: white;
         padding: 15px 30px;
@@ -226,13 +229,15 @@ header {
     left: -5px;
     right: 0;
     z-index: 1;
-    > img {
+
+    >img {
       width: 100%;
     }
 
     @media (max-width: 1500px) {
       top: 268px;
     }
+
     @media (max-width: 1400px) {
       top: 365px;
     }
@@ -252,5 +257,24 @@ header {
     @media (max-width: 463px) {
       top: 347px;
     }
+  }
+}
+
+.animated {
+  animation-name: slideInFromLeft;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  /* Optional: Verzögerung der Animation */
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

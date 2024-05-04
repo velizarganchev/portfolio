@@ -14,7 +14,7 @@
     height: auto;
     z-index: 3;
 
-    > h2 {
+    >h2 {
       font-size: 90px;
       font-weight: 700;
       line-height: 100px;
@@ -40,7 +40,7 @@
 
     .about-left-text {
       .about-main-text {
-        > p {
+        >p {
           font-size: 16px;
           font-weight: 400;
           line-height: 19.2px;
@@ -62,7 +62,7 @@
     }
 
     .about-img-container {
-      > img {
+      >img {
         border-radius: 50%;
       }
     }
@@ -77,8 +77,26 @@
     right: -450px;
     top: -111px;
     z-index: 1;
-    > img {
+
+    >img {
       width: 80%;
     }
   }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-visible {
+  opacity: 0;
+  animation: slide 1s forwards;
 }
