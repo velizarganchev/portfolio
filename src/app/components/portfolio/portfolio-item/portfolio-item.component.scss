@@ -5,9 +5,16 @@ section {
   justify-content: space-between;
   align-items: center;
   color: white;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  will-change: opacity;
+
+  &.visible {
+    opacity: 1;
+  }
 
   .left-section {
-    > img {
+    >img {
       width: 361px;
     }
   }
@@ -20,7 +27,7 @@ section {
     width: 513px;
     height: 339.19px;
 
-    > h3 {
+    >h3 {
       margin: 5px 0px;
       font-size: 32px;
       font-weight: 700;
@@ -31,6 +38,7 @@ section {
         font-size: 28px;
       }
     }
+
     .technologys {
       font-size: 23px;
       font-weight: 400;
@@ -121,7 +129,8 @@ section {
       width: 100%;
       height: auto;
       align-items: center;
-      > p {
+
+      >p {
         text-align: center;
       }
     }

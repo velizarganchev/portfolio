@@ -9,6 +9,14 @@
   @include dFlex($g: 20px);
   overflow-x: clip;
 
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  will-change: opacity;
+
+  &.visible {
+    opacity: 1;
+  }
+
   .about-left-container {
     width: 80%;
     height: auto;

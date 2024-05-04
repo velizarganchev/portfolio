@@ -1,17 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-} from '@angular/animations';
 
 import { FormsModule, NgForm } from '@angular/forms';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroArrowSmallUp } from '@ng-icons/heroicons/outline';
 import { HttpClient } from '@angular/common/http';
+import { FadeInDirective } from '../../fade-in.directive';
 
 @Component({
   selector: 'app-contact',
@@ -31,7 +25,7 @@ export class ContactComponent {
     privacy: '',
   };
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   post = {
     endPoint: 'http://velizar-ganchev.com/sendMail.php',

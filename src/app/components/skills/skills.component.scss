@@ -8,6 +8,13 @@ section {
   @include dFlex($g: 54px, $ai: baseline);
   flex-direction: row-reverse;
   padding-top: 122px;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  will-change: opacity;
+
+  &.visible {
+    opacity: 1;
+  }
 
   .left-section {
     width: 721px;
@@ -68,6 +75,7 @@ section {
   }
 
   @keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -75,19 +83,22 @@ section {
     100% {
       transform: translateY(0);
     }
+
     40% {
       transform: translateY(-20px);
     }
+
     60% {
       transform: translateY(-10px);
     }
   }
+
   .right-section {
     width: 471px;
     @include dFlex($g: 23px);
     flex-direction: column;
 
-    > h2 {
+    >h2 {
       margin: 0;
       font-size: 90px;
       font-weight: 700;
@@ -112,7 +123,7 @@ section {
       }
     }
 
-    > img {
+    >img {
       position: absolute;
       top: 176px;
       right: 0;
@@ -122,7 +133,7 @@ section {
       }
     }
 
-    > h4 {
+    >h4 {
       font-size: 16px;
       font-weight: 400;
       line-height: 19.2px;
@@ -136,7 +147,8 @@ section {
     .btn-container {
       margin-top: 11px;
       transition: transform 500ms ease-in-out;
-      > a {
+
+      >a {
         text-decoration: none;
         padding: 15px 30px;
         border-radius: 10px;
@@ -187,7 +199,7 @@ section {
     z-index: 10000;
     transition: transform 500ms ease-in-out;
 
-    > a {
+    >a {
       text-decoration: none;
       padding: 15px 30px;
       border-radius: 10px;

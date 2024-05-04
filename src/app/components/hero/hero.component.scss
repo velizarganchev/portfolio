@@ -6,6 +6,13 @@ header {
   background-color: $dark_blue;
   color: white;
   padding-top: 80px;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  will-change: opacity;
+
+  &.visible {
+    opacity: 1;
+  }
 
   .hero-container {
     display: flex;
