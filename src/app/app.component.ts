@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -12,6 +12,13 @@ import { FadeInDirective } from './fade-in.directive';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'portfolio';
+  ngOnInit() {
+    // AOS.init({
+    //   duration: 1000,
+    //   easing: 'ease-in-out'
+    // });
+    // AOS.refresh();
+  }
 }

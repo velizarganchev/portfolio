@@ -40,7 +40,7 @@
                         <input #privacy [(ngModel)]="contactData.privacy" type="checkbox" name="privacy" value="agree"
                             required>
                         <label
-                            for="privacy">{{t('checkboxF')}}<span>{{t('checkboxS')}}</span>{{t('checkboxT')}}</label><br>
+                            for="privacy">{{t('checkboxF')}}<a href="/privacy-policy">{{t('checkboxS')}}</a>{{t('checkboxT')}}</label><br>
                     </div>
                     <p *ngIf="!privacy.checked && contactForm.touched" class="error-message">Please accept the privacy
                         policy.</p>
