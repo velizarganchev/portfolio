@@ -1,16 +1,14 @@
-<section id="contact">
+<section id="contact" *transloco="let t; read:'contact'">
     <div class="title-container">
         <img src="../../../assets/img/contact-line-one.svg" alt="">
-        <h2>Contact</h2>
+        <h2>{{t('title')}}</h2>
     </div>
     <div class="contact-container">
         <div class="contact-left">
-            <h3>Got a problem to solve?</h3>
+            <h3>{{t('question')}}</h3>
             <div class="contact-left-content">
-                <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and
-                    contributing to
-                    your projects with my work.</p>
-                <p>Need a Frontend developer? <span>Contact me!</span></p>
+                <p>{{t('text')}}</p>
+                <p>{{t('subTextOne')}}<span>{{t('subTextTwo')}}</span></p>
             </div>
         </div>
         <div class="purple-shadow-footer-container">
@@ -21,34 +19,35 @@
                 <div class="inputs-container">
                     <input
                         [ngClass]="{'exclamation-input': !name.valid && name.touched, 'check-input': name.valid && name.touched}"
-                        #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name"
-                        minlength="4" required>
+                        #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
+                        placeholder="{{t('name')}}" minlength="4" required>
                     <p class="error-message" *ngIf="!name.valid && name.touched">Your name is required</p>
 
                     <input
                         [ngClass]="{'exclamation-input': !email.valid && email.touched, 'check-input': email.valid && email.touched}"
                         #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email"
-                        placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                        placeholder="{{t('email')}}" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                     <p *ngIf="!email.valid && email.touched" class="error-message">Your email is required</p>
 
                     <textarea
                         [ngClass]="{'exclamation-input': !message.valid && message.touched, 'check-input': message.valid && message.touched}"
                         #message="ngModel" [(ngModel)]="contactData.message" name="message" cols="30" rows="10"
-                        placeholder="Your message" required></textarea>
+                        placeholder="{{t('message')}}" required></textarea>
                     <p *ngIf="!message.valid && message.touched" class="error-message">Your message is empty</p>
                 </div>
                 <div class="checkbox-container">
                     <div class="checkbox-input">
-                        <input #privacy [(ngModel)]="contactData.privacy" type="checkbox" name="privacy" value="agree" 
-                        required>
-                        <label for="privacy">I've read the <span>privacy policy</span> and agree to the processing of my
-                            data as outlined.</label><br>
+                        <input #privacy [(ngModel)]="contactData.privacy" type="checkbox" name="privacy" value="agree"
+                            required>
+                        <label
+                            for="privacy">{{t('checkboxF')}}<span>{{t('checkboxS')}}</span>{{t('checkboxT')}}</label><br>
                     </div>
-                    <p *ngIf="!privacy.checked && contactForm.touched" class="error-message">Please accept the privacy policy.</p>
+                    <p *ngIf="!privacy.checked && contactForm.touched" class="error-message">Please accept the privacy
+                        policy.</p>
                 </div>
                 <div class="button-container">
                     <button [ngClass]="contactForm.valid ? 'send-button' : 'disabled-button'"
-                        [disabled]="!contactForm.valid" type="submit">Send message :&#41;</button>
+                        [disabled]="!contactForm.valid" type="submit">{{t('btn')}} :&#41;</button>
                 </div>
             </form>
             <div class="scroll-up-btn-container">

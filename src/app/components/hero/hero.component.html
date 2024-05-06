@@ -1,4 +1,4 @@
-<header id="hero" appFadeIn>
+<header id="hero" appFadeIn *transloco="let t; read:'hero'">
     <div class="hero-container">
         <div class="hero-img-container">
             <img class="hero-shadows" src="assets/img/hero-photo-shadows.svg" alt="">
@@ -6,13 +6,13 @@
         </div>
         <div class="hero-content-container" #heroContent>
             <div class="hero-text-container">
-                <h4>I am</h4>
+                <h4>{{t("iAm")}}</h4>
                 <div class="hero-title-container">
                     <h1 class="hero-title">Velizar Ganchev</h1>
-                    <h3 class="hero-subtitle">FRONTEND DEVELOPER</h3>
+                    <h3 class="hero-subtitle">{{t("subtitle")}}</h3>
                 </div>
             </div>
-            <a href="#contact">Let's talk</a>
+            <a href="#contact">{{t("btn")}}</a>
         </div>
     </div>
     <div class="hero-footer">
@@ -26,7 +26,7 @@
             <a href="#contact" class="hero-link-email">ganchev.veli&#64;gmail.com</a>
         </div>
         <div class="scroll-btn-container">
-            <button class="scroll-down-btn">Scroll down<img src="assets/img/scroll-down-arrow.svg"
+            <button class="scroll-down-btn">{{t("scroll")}}<img src="assets/img/scroll-down-arrow.svg"
                     alt="Scroll Down Arrow"></button>
         </div>
     </div>

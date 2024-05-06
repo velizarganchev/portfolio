@@ -1,0 +1,51 @@
+{
+  "navigation": {
+    "aboutMe": "Über mich",
+    "skills": "Skills",
+    "portfolio": "Portfolio"
+  },
+  "hero": {
+    "iAm": "Ich bin",
+    "subtitle": "FRONTEND ENTWICKLER",
+    "btn": "Lass uns reden!",
+    "scroll": "nach unten"
+  },
+  "about": {
+    "title": "Über mich",
+    "mainText": "  Hey! Ich bin Velizar, ein Frontend-Entwickler aus Erwitte, mit einer echten Leidenschaft fürs Coden und Design. Schon seit meiner Kindheit bin ich von Computern und ihrer Technik fasziniert; jetzt habe ich mein Hobby zum Beruf gemacht.",
+    "subTextOne": "Während meiner Ausbildung an der Developer Academy habe ich nicht nur gelernt, sondern auch jede Menge praktische Erfahrungen gesammelt, sei es durch eigene Projekte oder erfolgreiche Teamarbeit. Mir liegt besonders daran, Designs genau umzusetzen und dabei auf jedes Detail zu achten.",
+    "subTextTwo": "Wenn Sie neugierig sind, schauen Sie sich gerne meine bisherigen Arbeiten an, um einen Eindruck von meiner Hingabe und meinen Fähigkeiten zu gewinnen. Ich lade Sie herzlich ein, einen Blick auf mein Portfolio zu werfen."
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "text": "Durch die Arbeit an einer Vielzahl von Projekten konnte ich mein Wissen und meine Fähigkeiten in der Frontend-Entwicklung kontinuierlich ausbauen und verfeinern. Dies umfasst unter anderem die Verwendung von HTML, CSS und JavaScript sowie modernen Frameworks wie Angular.",
+    "btn": "Kontakt aufnehmen"
+  },
+  "portfolioMain": {
+    "subTitle": "Erkunden Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
+  },
+  "portfolioItem": {
+    "description0": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "description1": "Ein einfaches Jump-and-Run-Spiel mit einem objektorientierten Ansatz. Helfen Sie Pepe dabei, Münzen und Salsaboten zu sammeln, um gegen das mörderische Huhn anzutreten.",
+    "description2": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "description3": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "description4": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "question": "Haben Sie ein Problem, das gelöst werden muss?",
+    "text": "Kontaktieren Sie mich über dieses Formular. Ich interessiere mich dafür, von Ihnen zu hören, Ihre Ideen kennenzulernen und zu Ihren Projekten beizutragen.",
+    "subTextOne": "Benötigen Sie einen Frontend-Entwickler?",
+    "subTextTwo": " Kontaktieren Sie mich!",
+    "name": "Ihr Name",
+    "email": "Ihr Email",
+    "message": "Ihre Nachricht",
+    "checkboxF": "Ich habe die ",
+    "checkboxS": "Datenschutzbestimmungen",
+    "checkboxT": " gelesen und stimme der Verarbeitung meiner Daten gemäß den darin beschriebenen Bedingungen zu.",
+    "btn": "Nachricht senden"
+  },
+  "footer": {
+    "impr": "Impressum"
+  }
+}

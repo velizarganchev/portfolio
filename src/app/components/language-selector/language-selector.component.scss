@@ -1,0 +1,30 @@
+@import '../../../styles.scss';
+
+.ln-btn-container {
+    @include dFlex();
+    gap: 10px;
+
+    >button {
+        display: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        background-color: $dark_blue;
+
+
+        >img {
+            width: 30px;
+            height: 30px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.active {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}

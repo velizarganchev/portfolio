@@ -3,11 +3,13 @@ import { Component } from '@angular/core';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroBars3, heroXMark } from '@ng-icons/heroicons/outline';
 import { ClickStopPropagationDirective } from '../../click-stop-propagation.directive';
+import { LanguageSelectorComponent } from '../../components/language-selector/language-selector.component';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgIconComponent, CommonModule, ClickStopPropagationDirective],
+  imports: [NgIconComponent, CommonModule, ClickStopPropagationDirective, LanguageSelectorComponent, TranslocoModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
   viewProviders: [provideIcons({ heroBars3, heroXMark })],
@@ -16,8 +18,6 @@ export class NavbarComponent {
   showNavigation: boolean = true;
 
   showNav() {
-    console.log('CLICKED');
-    
     this.showNavigation = !this.showNavigation;
   }
 }

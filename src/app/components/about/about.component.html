@@ -1,21 +1,17 @@
-<section id="about" class="about-container" appFadeIn>
+<section id="about" class="about-container" appFadeIn *transloco="let t; read:'about'">
     <div class="about-left-container">
-        <h2>About me</h2>
+        <h2>{{t("title")}}</h2>
         <div class="about-left-text">
             <div class="about-main-text">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nemo
-                    voluptatum corporis officiis explicabo quibusdam architecto, iure possimus repellat nisi modi animi
-                    illum molestias magnam consequuntur eaque iusto earum impedit?</p>
+                <p>{{t("mainText")}}</p>
             </div>
             <div class="about-subtext-container">
                 <img src="assets/img/bulb-desktop.svg" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id repellat aut quo, fuga amet at,
-                    laudantium </p>
+                <p>{{t("subTextOne")}}</p>
             </div>
             <div class="about-subtext-container">
                 <img src="assets/img/puzzle-desktop.svg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis blanditiis ipsa eius quam sit
-                    consequuntur?</p>
+                <p>{{t("subTextTwo")}}</p>
             </div>
         </div>
     </div>

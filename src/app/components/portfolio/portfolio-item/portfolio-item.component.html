@@ -1,4 +1,4 @@
-<section [ngClass]="index % 2 != 0 ? 'reverse-item' : ''" appFadeIn>
+<section [ngClass]="index % 2 != 0 ? 'reverse-item' : ''" appFadeIn *transloco="let t; read:'portfolioItem'">
     <div class="left-section">
         <img [src]="project.imgPath" alt="">
     </div>
@@ -6,7 +6,7 @@
         <h3>{{project.title}}</h3>
         <p class="technologys">{{project.technologys[0]}} | {{project.technologys[1]}} | {{project.technologys[2]}} |
             {{project.technologys[3]}} | {{project.technologys[4]}}</p>
-        <p class="description">{{project.description}}</p>
+        <p class="description">{{t('description' + index)}}</p>
         <div class="buttons-container">
             <a href="{{project.links[0]}}" class="life-test-btn">Life test</a>
             <a href="{{project.links[1]}}" class="github-btn">Github</a>

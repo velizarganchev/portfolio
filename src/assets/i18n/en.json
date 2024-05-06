@@ -1,0 +1,51 @@
+{
+  "navigation": {
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio"
+  },
+  "hero": {
+    "iAm": "I am",
+    "subtitle": "FRONTEND DEVELOPER",
+    "btn": "Let's talk!",
+    "scroll": "scroll down"
+  },
+  "about": {
+    "title": "About me",
+    "mainText": " Hey! I'm Velizar, a front-end developer from Erwitte, with a real passion for coding and design. I've been fascinated by computers and their technology since I was a kid, and now I've turned my hobby into my profession.",
+    "subTextOne": " During my training at the Developer Academy, I not only learned but also gained a lot of practical experience, whether through my projects or successful teamwork. I am particularly interested in implementing designs precisely and paying attention to every detail.",
+    "subTextTwo": " If you are curious, please take a look at my previous work to get an impression of my dedication and skills. I cordially invite you to take a look at my portfolio."
+  },
+  "skills": {
+    "title": "My skills",
+    "text": "Through working on a variety of projects, I have been able to continuously expand and refine my knowledge and skills in front-end development. This includes the use of HTML, CSS, and JavaScript as well as modern frameworks such as Angular",
+    "btn": "Get in touch"
+  },
+  "portfolioMain": {
+    "subTitle": "Explore a selection of my work here - Interact with projects to see my skills in action."
+  },
+  "portfolioItem": {
+    "description0": "Task manager inspired by the Kanban System. Create and organize tasks using drag and dropfunctions, assign users and categories.",
+    "description1": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.",
+    "description2": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.",
+    "description3": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.",
+    "description4": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken."
+  },
+  "contact": {
+    "title": "Contact",
+    "question": "Got a problem to solve?",
+    "text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "subTextOne": "Need a Frontend developer?",
+    "subTextTwo": "Contact me!",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "checkboxF": "I've read the ",
+    "checkboxS": "privacy policy",
+    "checkboxT": " and agree to the processing of my data as outlined.",
+    "btn": "Send message"
+  },
+  "footer": {
+    "impr": "Imprint"
+  }
+}

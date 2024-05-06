@@ -1,4 +1,4 @@
-<footer>
+<footer *transloco="let t; read:'footer'">
     <div class="footer-container">
         <img src="assets/img/logo.svg" alt="Logo">
         <p>© Velizar Ganchev 2024</p>
@@ -11,6 +11,6 @@
         </nav>
     </div>
     <div class="impresum-container">
-        <p>Impressum</p>
+        <p>{{t('impr')}}</p>
     </div>
 </footer>

@@ -1,4 +1,4 @@
-<section id="portfolio" appFadeIn>
+<section id="portfolio" appFadeIn *transloco="let t; read:'portfolioMain'">
     <div class="portfolio-header-container">
         <div class="portfolio-header-title">
             <div class="first-line">
@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="subtitle-container">
-            <h4>Explore a selection of my work here - Interact with projects to see my skills in action.</h4>
+            <h4>{{t("subTitle")}}</h4>
         </div>
     </div>
     <div class="portfolio-purple-shadow-container">

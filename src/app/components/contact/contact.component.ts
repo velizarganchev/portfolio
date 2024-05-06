@@ -5,12 +5,12 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroArrowSmallUp } from '@ng-icons/heroicons/outline';
 import { HttpClient } from '@angular/common/http';
-import { FadeInDirective } from '../../fade-in.directive';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [NgIconComponent, FormsModule, CommonModule],
+  imports: [NgIconComponent, FormsModule, CommonModule, TranslocoModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
   viewProviders: [provideIcons({ heroArrowSmallUp })],

@@ -1,0 +1,6 @@
+<div class="ln-btn-container">
+    <button *ngFor="let language of languagesList; let i = index" class="btn"
+        [ngClass]="i == currentLanguageIndex ? 'active' : ''" (click)="changeLanguage(language.code, i)">
+        <img [src]="language.imgUrl" [alt]="language.name" />
+    </button>
+</div>

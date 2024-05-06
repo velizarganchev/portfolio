@@ -10,7 +10,7 @@ nav {
   padding: 37px 100px;
   z-index: 11111;
 
-  > img {
+  >img {
     &:hover {
       cursor: pointer;
     }
@@ -41,7 +41,8 @@ nav {
     font-size: 23px;
     font-weight: 400;
     line-height: 27.6px;
-    > a {
+
+    >a {
       color: white;
       text-decoration: none;
 
@@ -89,6 +90,7 @@ nav {
       right: 25px;
     }
   }
+
   .nav-links-mobile-container {
     display: flex;
     flex-direction: column;
@@ -96,15 +98,20 @@ nav {
     align-items: flex-start;
     gap: 29px;
 
-    > a {
+    >a {
       color: white;
       font-size: 23px;
       font-weight: 400;
       line-height: 27.6px;
       text-decoration: none;
+
       &:hover {
         color: #70e61c;
       }
+    }
+
+    app-language-selector {
+      min-width: 100px;
     }
   }
 
