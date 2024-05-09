@@ -36,7 +36,7 @@ const fakeProjects = [
     title: 'Mon Ami Patisseri',
     technologys: ['Next.js', 'JavaScript', 'HTML', 'CSS', 'mongoDB'],
     description:
-      'Task manager inspired by the Kanban System. Create and organize tasks using drag and dropfunctions, assign users and categories.',
+      'The website serves as a platform for a food delivery service, where customers can choose their favorite cake from a wide selection of products.',
     imgPath: '../assets/img/portfolio-monAmiPatisseri.svg',
     links: [
       'https://monamipatisserie-nextjs.vercel.app',
