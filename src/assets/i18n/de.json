@@ -18,7 +18,7 @@
   },
   "skills": {
     "title": "Fähigkeiten",
-    "text": "Durch die Arbeit an einer Vielzahl von Projekten konnte ich mein Wissen und meine Fähigkeiten in der Frontend-Entwicklung kontinuierlich ausbauen und verfeinern. Dies umfasst unter anderem die Verwendung von HTML, CSS und JavaScript sowie modernen Frameworks wie Angular.",
+    "text": "Durch die Arbeit an verschiedensten Projekten konnte ich kontinuierlich mein Wissen und meine Fähigkeiten im Bereich Front-End-Entwicklung erweitern und verfeinern. Diese Reise hat meine Expertise in HTML, CSS und JavaScript vertieft, während ich mich auch mit modernen Frameworks wie Angular und React auseinandergesetzt habe.",
     "btn": "Kontakt aufnehmen"
   },
   "portfolioMain": {
@@ -28,8 +28,8 @@
     "description0": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
     "description1": "Ein einfaches Jump-and-Run-Spiel mit einem objektorientierten Ansatz. Helfen Sie Pepe dabei, Münzen und Salsaboten zu sammeln, um gegen das mörderische Huhn anzutreten.",
     "description2": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-    "description3": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-    "description4": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+    "description3": "Die Webseite dient als Plattform für einen Essens-Lieferdienst, auf der Kunden aus einer breiten Auswahl an Produkten ihren favorisierten Kuchen auswählen können.",
+    "description4": "Es handelt sich um eine Full-Stack-Hotelbuchungsanwendung, die mit Next.js erstellt wurde und die Stripe-Zahlungsgateway integriert hat, um Zahlungen von Benutzern zu akzeptieren und bewährte Verfahren zu befolgen."
   },
   "contact": {
     "title": "Kontakt",

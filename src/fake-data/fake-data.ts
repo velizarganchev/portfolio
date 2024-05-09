@@ -34,23 +34,23 @@ const fakeProjects = [
   },
   {
     title: 'Mon Ami Patisseri',
-    technologys: ['React', 'JavaScript', 'HTML', 'CSS', 'mongoDB'],
+    technologys: ['Next.js', 'JavaScript', 'HTML', 'CSS', 'mongoDB'],
     description:
       'Task manager inspired by the Kanban System. Create and organize tasks using drag and dropfunctions, assign users and categories.',
     imgPath: '../assets/img/portfolio-monAmiPatisseri.svg',
     links: [
-      'http://velizar-ganchev.com/ring-of-fire',
-      'https://github.com/velizarganchev/ring-of-fire',
+      'https://monamipatisserie-nextjs.vercel.app',
+      'https://github.com/velizarganchev/monamipatisserie-nextjs',
     ],
   },
   {
     title: 'Real Estate',
-    technologys: ['React', 'JavaScript', 'HTML', 'CSS', 'mongoDB'],
+    technologys: ['Next.js', 'JavaScript', 'HTML', 'CSS', 'mongoDB'],
     description:
-      'Task manager inspired by the Kanban System. Create and organize tasks using drag and dropfunctions, assign users and categories.',
+      'A full-stack hotel booking application developed using Next.js, seamlessly integrated with the Stripe Payment Gateway to facilitate user payments, adhering to industry best practices.',
     imgPath: 'assets/img/portfolio-real-estate.svg',
     links: [
-      'https://real-estatev.vercel.app/',
+      'https://real-estatev.vercel.app',
       'https://github.com/velizarganchev/real-estate',
     ],
   },

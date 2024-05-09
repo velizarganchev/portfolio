@@ -13,12 +13,12 @@
   "about": {
     "title": "About me",
     "mainText": " Hey! I'm Velizar, a front-end developer from Erwitte, with a real passion for coding and design. I've been fascinated by computers and their technology since I was a kid, and now I've turned my hobby into my profession.",
-    "subTextOne": " During my training at the Developer Academy, I not only learned but also gained a lot of practical experience, whether through my projects or successful teamwork. I am particularly interested in implementing designs precisely and paying attention to every detail.",
+    "subTextOne": "During my training at the Developer Academy, I not only learned but also gained a lot of practical experience, whether through my projects or successful teamwork. I am particularly interested in implementing designs precisely and paying attention to every detail.",
     "subTextTwo": " If you are curious, please take a look at my previous work to get an impression of my dedication and skills. I cordially invite you to take a look at my portfolio."
   },
   "skills": {
     "title": "My skills",
-    "text": "Through working on a variety of projects, I have been able to continuously expand and refine my knowledge and skills in front-end development. This includes the use of HTML, CSS, and JavaScript as well as modern frameworks such as Angular",
+    "text": "By immersing myself in diverse projects, I've had the opportunity to constantly broaden and enhance my expertise in front-end development. This journey has deepened my proficiency in HTML, CSS, and JavaScript, while also delving into contemporary frameworks like Angular and React.",
     "btn": "Get in touch"
   },
   "portfolioMain": {
@@ -28,8 +28,8 @@
     "description0": "Task manager inspired by the Kanban System. Create and organize tasks using drag and dropfunctions, assign users and categories.",
     "description1": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.",
     "description2": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.",
-    "description3": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.",
-    "description4": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken."
+    "description3": "The website serves as a platform for a food delivery service, where customers can choose their favorite cake from a wide selection of products.",
+    "description4": "A full-stack hotel booking application developed using Next.js, seamlessly integrated with the Stripe Payment Gateway to facilitate user payments, adhering to industry best practices."
   },
   "contact": {
     "title": "Contact",
