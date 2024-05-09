@@ -1,4 +1,4 @@
-<section id="about" class="about-container" appFadeIn *transloco="let t; read:'about'">
+<section id="about" class="about-container" *transloco="let t; read:'about'">
     <div class="about-left-container">
         <h2>{{t("title")}}</h2>
         <div class="about-left-text">
@@ -18,12 +18,11 @@
     <div class="purple-shadow">
         <img src="../../../assets/img/purple-shadow.svg" alt="">
     </div>
-    <div class="about-right-container">
+    <div class="about-right-container" data-aos="fade-left" data-aos-duration="2000">
         <img class="about-ellipse" src="assets/img/about-ellipse.svg" alt="">
         <div class="about-img-container">
             <img src="assets/img/hero-about.svg" alt="">
         </div>
         <img class="about-green-line" src="assets/img/about-green-line.svg" alt="">
     </div>
-
 </section>

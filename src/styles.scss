@@ -1,3 +1,5 @@
+@import 'aos/dist/aos.css';
+
 $green: #70e61c;
 $ligt_blue: #1cdae6;
 $purple: #9747ff;
@@ -7,6 +9,10 @@ $grey: #b6b6b6;
 
 html {
   scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
 }
 
 @mixin dFlex($jc: center, $ai: center, $g: 0px) {

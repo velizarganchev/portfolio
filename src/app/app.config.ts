@@ -7,11 +7,13 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { TranslocoHttpLoader } from './transloco-loader';
 import { provideTransloco } from '@ngneat/transloco';
+import { provideImgixLoader } from '@angular/common';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     provideHttpClient(),
+    provideImgixLoader('http://velizar-ganchev.com/'),
     importProvidersFrom(
       provideFirebaseApp(() =>
         initializeApp({
@@ -25,14 +27,14 @@ export const appConfig: ApplicationConfig = {
       )
     ),
     importProvidersFrom(provideFirestore(() => getFirestore())), provideHttpClient(), provideTransloco({
-        config: { 
-          availableLangs: ['en', 'de'],
-          defaultLang: 'en',
-          // Remove this option if your application doesn't support changing language in runtime.
-          reRenderOnLangChange: true,
-          prodMode: !isDevMode(),
-        },
-        loader: TranslocoHttpLoader
-      }),
+      config: {
+        availableLangs: ['en', 'de'],
+        defaultLang: 'en',
+        // Remove this option if your application doesn't support changing language in runtime.
+        reRenderOnLangChange: true,
+        prodMode: !isDevMode(),
+      },
+      loader: TranslocoHttpLoader
+    }),
   ],
 };

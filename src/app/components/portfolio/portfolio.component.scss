@@ -11,6 +11,7 @@ section {
   justify-content: center;
   align-items: center;
   overflow-x: clip;
+  // z-index: 9999;
 
   .portfolio-header-container {
     width: 100%;
@@ -53,7 +54,7 @@ section {
         }
       }
 
-      > h2 {
+      >h2 {
         margin: 10px 0px;
         font-size: 90px;
         line-height: 108px;
@@ -112,7 +113,7 @@ section {
       width: 100%;
       text-align: center;
 
-      > h4 {
+      >h4 {
         font-size: 16px;
         font-weight: 400;
         line-height: 19.2px;
@@ -131,7 +132,7 @@ section {
     overflow: hidden;
     z-index: 0;
 
-    > img {
+    >img {
       width: 736px;
       height: 848px;
     }
@@ -152,7 +153,7 @@ section {
       left: 870px;
       z-index: -1;
 
-      > img {
+      >img {
         width: 736px;
         height: 848px;
         transform: rotate(75deg);

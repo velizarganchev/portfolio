@@ -3,7 +3,6 @@ import { PortfolioItemComponent } from './portfolio-item/portfolio-item.componen
 
 import fakeProjects from '../../../fake-data/fake-data';
 import { CommonModule } from '@angular/common';
-import { FadeInDirective } from '../../fade-in.directive';
 import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({

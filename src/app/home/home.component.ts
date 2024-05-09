@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeroComponent } from '../components/hero/hero.component';
 import { AboutComponent } from '../components/about/about.component';
 import { SkillsComponent } from '../components/skills/skills.component';
@@ -12,4 +12,4 @@ import { ContactComponent } from '../components/contact/contact.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {}
+export class HomeComponent { }

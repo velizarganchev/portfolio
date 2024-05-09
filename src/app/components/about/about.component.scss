@@ -9,14 +9,6 @@
   @include dFlex($g: 20px);
   overflow-x: clip;
 
-  opacity: 0;
-  transition: opacity 1s ease-out;
-  will-change: opacity;
-
-  &.visible {
-    opacity: 1;
-  }
-
   .about-left-container {
     width: 80%;
     height: auto;
@@ -92,19 +84,19 @@
   }
 }
 
-@keyframes slide {
-  from {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
+// @keyframes slide {
+//   from {
+//     opacity: 0;
+//     transform: translateY(-100px);
+//   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
 
-.about-visible {
-  opacity: 0;
-  animation: slide 1s forwards;
-}
+// .about-visible {
+//   opacity: 0;
+//   animation: slide 1s forwards;
+// }

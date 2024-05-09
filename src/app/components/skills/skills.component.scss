@@ -8,13 +8,6 @@ section {
   @include dFlex($g: 54px, $ai: baseline);
   flex-direction: row-reverse;
   padding-top: 122px;
-  opacity: 0;
-  transition: opacity 1s ease-out;
-  will-change: opacity;
-
-  &.visible {
-    opacity: 1;
-  }
 
   .left-section {
     width: 721px;
@@ -147,30 +140,30 @@ section {
 
     .btn-container {
       margin-top: 11px;
-      transition: transform 500ms ease-in-out;
 
       >a {
-        text-decoration: none;
-        padding: 15px 30px;
-        border-radius: 10px;
-        border: none;
-        color: white;
-        font-size: 23px;
-        font-weight: 400;
-        line-height: 27.6px;
-        background-color: $green;
+        >button {
+          padding: 15px 30px;
+          border-radius: 10px;
+          border: none;
+          color: white;
+          font-size: 23px;
+          font-weight: 400;
+          line-height: 27.6px;
+          background-color: $green;
+          transition: transform 500ms ease-in-out;
 
-        &:hover {
-          background-color: $purple;
-        }
+          &:hover {
+            transform: scale(1.2);
 
-        @media (max-width: 1140px) {
-          display: none;
+            background-color: $purple;
+            cursor: pointer;
+          }
         }
       }
 
-      &:hover {
-        transform: scale(1.2);
+      @media (max-width: 1140px) {
+        display: none;
       }
     }
 

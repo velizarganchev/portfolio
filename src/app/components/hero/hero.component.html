@@ -1,10 +1,11 @@
-<header id="hero" appFadeIn *transloco="let t; read:'hero'">
+<header id="hero" *transloco="let t; read:'hero'">
     <div class="hero-container">
-        <div class="hero-img-container">
+        <div class="hero-img-container" data-aos="fade-in" data-aos-duration="2000">
             <img class="hero-shadows" src="assets/img/hero-photo-shadows.svg" alt="">
-            <img class="hero-photo" src="assets/img/hero.svg" alt="">
+            <img class="hero-photo" src="assets/img/hero-test3.png" alt="">
         </div>
-        <div class="hero-content-container" #heroContent>
+        <div class="hero-content-container" #heroContent data-aos="fade-left" data-aos-delay="1000"
+            data-aos-duration="1000" data-aos-anchor="#hero" data-aos-anchor-placement="top-bottom">
             <div class="hero-text-container">
                 <h4>{{t("iAm")}}</h4>
                 <div class="hero-title-container">
@@ -12,20 +13,39 @@
                     <h3 class="hero-subtitle">{{t("subtitle")}}</h3>
                 </div>
             </div>
-            <a href="#contact">{{t("btn")}}</a>
+            <div class="hero-btn-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="3000"
+                data-aos-duration="1800">
+                <a href="#contact"><button>{{t("btn")}}</button></a>
+            </div>
         </div>
     </div>
     <div class="hero-footer">
         <div class="hero-links-container">
-            <div class="hero-vector-footer"></div>
-            <a href="https://github.com/velizarganchev" class="hero-link"><img src="assets/img/github-button.svg"
-                    alt=""></a>
-            <a href="mailto:ganchev.veli@gmail.com" class="hero-link"><img src="assets/img/email-button.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/velizar-ganchev-29311621b/" class="hero-link"><img
-                    src="assets/img/linkedin-button.svg" alt=""></a>
-            <a href="#contact" class="hero-link-email">ganchev.veli&#64;gmail.com</a>
+            <div class="hero-vector-footer" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="200"></div>
+            <a href="https://github.com/velizarganchev" data-aos="zoom-in" data-aos-delay="1400"
+                data-aos-duration="200">
+                <div class="hero-link">
+                    <img src="assets/img/github-button.svg" alt="">
+                </div>
+            </a>
+            <a href="mailto:ganchev.veli@gmail.com" data-aos="zoom-in" data-aos-delay="1800" data-aos-duration="200">
+                <div class="hero-link">
+                    <img src="assets/img/email-button.svg" alt="">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/velizar-ganchev-29311621b/" data-aos="zoom-in" data-aos-delay="2200"
+                data-aos-duration="200">
+                <div class="hero-link">
+                    <img src="assets/img/linkedin-button.svg" alt="">
+                </div>
+            </a>
+            <a href="#contact" data-aos="zoom-in" data-aos-delay="2600" data-aos-duration="200">
+                <div class="hero-link-email">
+                    ganchev.veli&#64;gmail.com
+                </div>
+            </a>
         </div>
-        <div class="scroll-btn-container">
+        <div class="scroll-btn-container" data-aos="zoom-in" data-aos-delay="2800" data-aos-duration="200">
             <button class="scroll-down-btn">{{t("scroll")}}<img src="assets/img/scroll-down-arrow.svg"
                     alt="Scroll Down Arrow"></button>
         </div>

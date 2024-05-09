@@ -12,8 +12,6 @@ export class FadeInDirective implements OnInit {
 
   constructor(private element: ElementRef, private renderer: Renderer2) { }
 
-  //TODO: possibly implement debouncing
-
   ngOnInit() {
     this.createObserver();
   }

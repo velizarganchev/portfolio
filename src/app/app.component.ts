@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { FadeInDirective } from './fade-in.directive';
+import Aos from "aos";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavbarComponent, FooterComponent, FadeInDirective],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
+
 export class AppComponent implements OnInit {
   title = 'portfolio';
-  ngOnInit() {
-    // AOS.init({
-    //   duration: 1000,
-    //   easing: 'ease-in-out'
-    // });
-    // AOS.refresh();
+
+  ngOnInit(): void {
+    Aos.init({
+      easing: "ease-in-out"
+    });
+    Aos.refresh();
   }
 }

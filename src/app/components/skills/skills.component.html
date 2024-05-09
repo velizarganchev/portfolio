@@ -1,4 +1,4 @@
-<section id="skills" appFadeIn *transloco="let t; read:'skills'">
+<section id="skills" *transloco="let t; read:'skills'">
     <div class="skills-green-shadow">
         <img src="assets/img/green-shadow2.svg" alt="">
     </div>
@@ -6,11 +6,12 @@
         <h2>{{t("title")}}</h2>
         <img src="../../../assets/img/skils-title-vector.svg" alt="">
         <h4>{{t("text")}}</h4>
-        <div class="btn-container">
-            <a href="#contact">{{t("btn")}}</a>
+        <div class="btn-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"
+            data-aos-duration="1000">
+            <a href="#contact"><button>{{t("btn")}}</button></a>
         </div>
     </div>
-    <div class="left-section">
+    <div class="left-section" data-aos="flip-left" data-aos-duration="2500">
         <div class="icon-container">
             <img src="../../../assets/img/angular-skills.svg" alt="">Angular
         </div>
@@ -42,7 +43,10 @@
             <img src="../../../assets/img/material-skills.svg" alt="">Material Desing
         </div>
     </div>
-    <div class="responsiv-btn-container">
-        <a href="#contact">{{t("btn")}}</a>
+    <div class="responsiv-btn-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="2000"
+        data-aos-duration="1800">
+        <a href="#contact">
+            <button>{{t("btn")}}</button>
+        </a>
     </div>
 </section>
