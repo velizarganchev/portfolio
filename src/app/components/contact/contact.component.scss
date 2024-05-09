@@ -282,6 +282,7 @@ section {
             &:hover {
               background-color: $purple;
               transform: scale(1.2);
+              cursor: pointer;
             }
 
             @media (max-width: 431px) {

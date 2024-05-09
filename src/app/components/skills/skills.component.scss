@@ -191,22 +191,23 @@ section {
   .responsiv-btn-container {
     margin: 20px 0;
     z-index: 10000;
-    transition: transform 500ms ease-in-out;
 
     >a {
-      text-decoration: none;
-      padding: 15px 30px;
-      border-radius: 10px;
-      border: none;
-      color: white;
-      font-size: 23px;
-      font-weight: 400;
-      line-height: 27.6px;
-      background-color: $green;
-      transition: transform 500ms ease-in-out;
+      >button {
+        padding: 15px 30px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        background-color: $green;
+        transition: transform 500ms ease-in-out;
 
-      &:hover {
-        background-color: $purple;
+        &:hover {
+          background-color: $purple;
+          transform: scale(1.2);
+        }
       }
 
       @media (max-width: 1140px) {
@@ -220,10 +221,6 @@ section {
       @media (max-width: 361px) {
         font-size: 16px;
       }
-    }
-
-    &:hover {
-      transform: scale(1.2);
     }
   }
 
