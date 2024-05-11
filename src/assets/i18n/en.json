@@ -12,9 +12,9 @@
   },
   "about": {
     "title": "About me",
-    "mainText": " Hey! I'm Velizar, a front-end developer from Erwitte, with a real passion for coding and design. I've been fascinated by computers and their technology since I was a kid, and now I've turned my hobby into my profession.",
-    "subTextOne": "During my training at the Developer Academy, I not only learned but also gained a lot of practical experience, whether through my projects or successful teamwork. I am particularly interested in implementing designs precisely and paying attention to every detail.",
-    "subTextTwo": " If you are curious, please take a look at my previous work to get an impression of my dedication and skills. I cordially invite you to take a look at my portfolio."
+    "mainText": "Greetings! I'm Velizar, a dedicated frontend developer based in Erwitte, Germany, deeply passionate about coding and design. My journey into the tech world began in childhood, where my fascination with computers evolved into a professional pursuit.",
+    "subTextOne": "My time at the Developer Academy was not just about learning but also about gaining invaluable practical experience. Through a series of projects and collaborative efforts, I've honed my skills in frontend development, particularly in precision design implementation and attention to detail.",
+    "subTextTwo": "For a glimpse into my work ethic and capabilities, I invite you to explore my portfolio and witness firsthand the projects I've contributed to."
   },
   "skills": {
     "title": "My skills",

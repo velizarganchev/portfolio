@@ -127,14 +127,18 @@ section {
 
   .portfolio-purple-shadow-container {
     position: absolute;
-    top: 1110px;
-    right: 690px;
+    top: 1500px;
+    left: -290px;
     overflow: hidden;
     z-index: 0;
 
     >img {
       width: 736px;
       height: 848px;
+    }
+
+    @media (max-width: 769px) {
+      left: -400px;
     }
   }
 

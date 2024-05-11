@@ -1,9 +1,9 @@
 <section id="portfolio-project{{index}}" [ngClass]="index % 2 != 0 ? 'reverse-item' : ''"
     *transloco="let t; read:'portfolioItem'">
-    <div class="left-section" data-aos="flip-right" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+    <div class="left-section" data-aos="flip-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
         <img [src]="project.imgPath" alt="">
     </div>
-    <div class="right-section" data-aos="flip-left" data-aos-anchor-placement="top-bottom" data-aos-duration="3000"
+    <div class="right-section" data-aos="flip-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1500"
         [ngClass]="index % 2 != 0 ? 'reverse-right-section' : ''">
         <h3>{{project.title}}</h3>
         <p class="technologys">{{project.technologys[0]}} | {{project.technologys[1]}} | {{project.technologys[2]}} |

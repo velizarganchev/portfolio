@@ -2,7 +2,7 @@
 
 nav {
   position: fixed;
-  opacity: 80%;
+  opacity: 80% !important;
   top: 0;
   left: 0;
   right: 0;
@@ -33,9 +33,7 @@ nav {
     }
   }
 
-  @media (max-width: 431px) {
-    padding: 37px 25px;
-  }
+
 
   .nav-links-container {
     @include dFlex($g: 29px);
@@ -58,7 +56,15 @@ nav {
   }
 
   @media (max-width: 821px) {
+    padding: 20px 25px;
+  }
+
+  @media (max-width: 431px) {
     padding: 37px 25px;
+  }
+
+  @media only screen and (max-width: 376px) and (max-height: 668px) {
+    padding: 20px 25px;
   }
 }
 
