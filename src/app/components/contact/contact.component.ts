@@ -29,7 +29,7 @@ export class ContactComponent {
   constructor(private http: HttpClient) { }
 
   post = {
-    endPoint: 'http://velizar-ganchev.com/sendMail.php',
+    endPoint: 'https://velizar-ganchev.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
