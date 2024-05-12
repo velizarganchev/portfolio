@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 
-import fakeProjects from '../../../fake-data/fake-data';
+import projects from '../../../data/data';
 import { CommonModule } from '@angular/common';
 import { TranslocoModule } from '@ngneat/transloco';
 
@@ -16,6 +16,6 @@ export class PortfolioComponent {
   projects;
 
   constructor() {
-    this.projects = fakeProjects;
+    this.projects = projects;
   }
 }
