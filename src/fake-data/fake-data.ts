@@ -22,14 +22,14 @@ const fakeProjects = [
     ],
   },
   {
-    title: 'Koch Welt',
+    title: 'My Recipe Book',
     technologys: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
     description:
-      'Task manager inspired by the Kanban System. Create and organize tasks using drag and dropfunctions, assign users and categories.',
+      'A highly responsive web application for recipe management and shopping lists, offering an exceptional user experience. It essentially comprises two main sections: the Recipe Book and the Shopping List. Users can manage recipes and view them in detail within the Recipe Book, while also seamlessly adding ingredients from recipes directly to the Shopping List.',
     imgPath: 'assets/img/join-photo.svg',
     links: [
-      'http://velizar-ganchev.com/koch-welt',
-      'https://github.com/velizarganchev/koch-welt',
+      'http://velizar-ganchev.com/my-recipe-book',
+      'https://github.com/velizarganchev/my-recipe-book',
     ],
   },
   {

@@ -27,7 +27,7 @@
   "portfolioItem": {
     "description0": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
     "description1": "Ein einfaches Jump-and-Run-Spiel mit einem objektorientierten Ansatz. Helfen Sie Pepe dabei, Münzen und Salsaboten zu sammeln, um gegen das mörderische Huhn anzutreten.",
-    "description2": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "description2": "Ein äußerst reaktives Web-App für die Verwaltung von Rezepten und Einkaufslisten, das eine außergewöhnliche Benutzererfahrung bietet. Es besteht im Wesentlichen aus zwei Hauptbereichen: dem Rezeptbuch und der Einkaufsliste. Benutzer können Rezepte verwalten und detailliert im Rezeptbuch anzeigen, während sie gleichzeitig problemlos Zutaten aus den Rezepten direkt in die Einkaufsliste übertragen können.",
     "description3": "Die Webseite dient als Plattform für einen Essens-Lieferdienst, auf der Kunden aus einer breiten Auswahl an Produkten ihren favorisierten Kuchen auswählen können.",
     "description4": "Es handelt sich um eine Full-Stack-Hotelbuchungsanwendung, die mit Next.js erstellt wurde und die Stripe-Zahlungsgateway integriert hat, um Zahlungen von Benutzern zu akzeptieren und bewährte Verfahren zu befolgen."
   },
