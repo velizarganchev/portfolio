@@ -3,7 +3,7 @@
         <img src="../../../assets/img/contact-line-one.svg" alt="">
         <h2>{{t('title')}}</h2>
     </div>
-    <div class="contact-container"  >
+    <div class="contact-container">
         <div class="contact-left">
             <h3>{{t('question')}}</h3>
             <div class="contact-left-content">
@@ -40,7 +40,7 @@
                         <input #privacy [(ngModel)]="contactData.privacy" type="checkbox" name="privacy" value="agree"
                             required>
                         <label for="privacy">{{t('checkboxF')}}<a
-                                href="/privacy-policy">{{t('checkboxS')}}</a>{{t('checkboxT')}}</label><br>
+                                routerLink="/privacy-policy">{{t('checkboxS')}}</a>{{t('checkboxT')}}</label><br>
                     </div>
                     <p *ngIf="!privacy.checked && contactForm.touched" class="error-message">Please accept the privacy
                         policy.</p>
@@ -51,7 +51,7 @@
                 </div>
             </form>
             <div class="scroll-up-btn-container">
-                <a href="#" class="scroll-up-btn"><ng-icon name="heroArrowSmallUp"></ng-icon></a>
+                <a routerLink="/" class="scroll-up-btn"><ng-icon name="heroArrowSmallUp"></ng-icon></a>
             </div>
         </div>
     </div>

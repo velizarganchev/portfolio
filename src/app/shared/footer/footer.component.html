@@ -1,6 +1,8 @@
 <footer *transloco="let t; read:'footer'">
     <div class="footer-container">
-        <img src="assets/img/logo.svg" alt="Logo">
+        <a routerLink="/">
+            <img src="assets/img/logo.svg" alt="Logo">
+        </a>
         <p>© Velizar Ganchev 2024</p>
         <nav>
             <a href="https://github.com/velizarganchev" class="nav-link"><img src="assets/img/github-button.svg"
@@ -10,7 +12,7 @@
                     src="assets/img/linkedin-button.svg" alt=""></a>
         </nav>
     </div>
-    <a href="/imprint" >
+    <a routerLink="/imprint">
         <p>{{t('impr')}}</p>
     </a>
 </footer>

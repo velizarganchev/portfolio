@@ -6,11 +6,12 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroArrowSmallUp } from '@ng-icons/heroicons/outline';
 import { HttpClient } from '@angular/common/http';
 import { TranslocoModule } from '@ngneat/transloco';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [NgIconComponent, FormsModule, CommonModule, TranslocoModule],
+  imports: [NgIconComponent, RouterLink, FormsModule, CommonModule, TranslocoModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
   viewProviders: [provideIcons({ heroArrowSmallUp })],
