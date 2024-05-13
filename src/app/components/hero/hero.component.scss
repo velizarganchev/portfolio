@@ -13,6 +13,7 @@ header {
   }
 
   .hero-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -375,6 +376,10 @@ header {
       width: 100%;
     }
 
+    @media (min-width: 1765px) {
+      top: 188px;
+    }
+
     @media (max-width: 1500px) {
       top: 268px;
     }
@@ -400,7 +405,10 @@ header {
     }
 
     @media (max-width: 463px) {
-      top: 347px;
+      top: 410px;
+    }
+    @media (max-width: 376px) {
+      top: 374px;
     }
   }
 

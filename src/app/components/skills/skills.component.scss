@@ -92,6 +92,8 @@ section {
     width: 471px;
     @include dFlex($g: 23px);
     flex-direction: column;
+    z-index: 9999;
+
 
     >h2 {
       margin: 0;
