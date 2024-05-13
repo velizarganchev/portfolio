@@ -11,14 +11,20 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [NgIconComponent, RouterLink, FormsModule, CommonModule, TranslocoModule],
+  imports: [
+    NgIconComponent,
+    RouterLink,
+    FormsModule,
+    CommonModule,
+    TranslocoModule,
+  ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
   viewProviders: [provideIcons({ heroArrowSmallUp })],
 })
 export class ContactComponent {
   mailTest = false;
-
+  showSuccessMessage = false;
   contactData = {
     name: '',
     email: '',
@@ -26,7 +32,7 @@ export class ContactComponent {
     privacy: '',
   };
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   post = {
     endPoint: 'https://velizar-ganchev.com/sendMail.php',
@@ -50,7 +56,12 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {
+            this.showSuccessMessage = true;
+            setTimeout(() => {
+              this.showSuccessMessage = false;
+            }, 2000);
+          },
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();

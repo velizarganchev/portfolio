@@ -372,3 +372,11 @@ section {
   opacity: 0;
   animation: slideIn 0.7s forwards;
 }
+
+.success-message {
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $green;
+  animation: slideIn 1s forwards;
+}

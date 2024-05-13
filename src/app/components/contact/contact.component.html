@@ -45,6 +45,7 @@
                     <p *ngIf="!privacy.checked && contactForm.touched" class="error-message">Please accept the privacy
                         policy.</p>
                 </div>
+                <div *ngIf="showSuccessMessage" class="success-message">Your message has been successfully sent.</div>
                 <div class="button-container">
                     <button [ngClass]="contactForm.valid ? 'send-button' : 'disabled-button'"
                         [disabled]="!contactForm.valid" type="submit">{{t('btn')}} :&#41;</button>
