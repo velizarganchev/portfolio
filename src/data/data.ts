@@ -21,17 +21,17 @@ const fakeProjects = [
       'https://github.com/velizarganchev/DeveloperAkademie/tree/main/html-basics/el-pollo-loco',
     ],
   },
-  {
-    title: 'My Recipe Book',
-    technologys: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
-    description:
-      'A highly responsive web application for recipe management and shopping lists, offering an exceptional user experience. It essentially comprises two main sections: the Recipe Book and the Shopping List. Users can manage recipes and view them in detail within the Recipe Book, while also seamlessly adding ingredients from recipes directly to the Shopping List.',
-    imgPath: 'assets/img/join-photo.svg',
-    links: [
-      'http://velizar-ganchev.com/my-recipe-book',
-      'https://github.com/velizarganchev/my-recipe-book',
-    ],
-  },
+  // {
+  //   title: 'My Recipe Book',
+  //   technologys: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
+  //   description:
+  //     'A highly responsive web application for recipe management and shopping lists, offering an exceptional user experience. It essentially comprises two main sections: the Recipe Book and the Shopping List. Users can manage recipes and view them in detail within the Recipe Book, while also seamlessly adding ingredients from recipes directly to the Shopping List.',
+  //   imgPath: 'assets/img/join-photo.svg',
+  //   links: [
+  //     'http://velizar-ganchev.com/my-recipe-book',
+  //     'https://github.com/velizarganchev/my-recipe-book',
+  //   ],
+  // },
   {
     title: 'Mon Ami Patisseri',
     technologys: ['Next.js', 'JavaScript', 'HTML', 'CSS', 'mongoDB'],
