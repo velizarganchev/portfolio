@@ -13,11 +13,11 @@ header {
   }
 
   .hero-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 55px;
-
 
     @media (max-width: 1140px) {
       flex-direction: column;
@@ -93,6 +93,7 @@ header {
     }
 
     .hero-content-container {
+      position: relative;
       z-index: 9999;
       @include dFlex();
       flex-direction: column;
@@ -104,7 +105,7 @@ header {
         justify-content: center;
         gap: 0px;
 
-        >h4 {
+        > h4 {
           transform: rotate(-90deg);
           margin: 0px;
           font-size: 54px;
@@ -189,10 +190,10 @@ header {
       }
 
       .hero-btn-container {
-        >a {
+        > a {
           text-decoration: none;
 
-          >button {
+          > button {
             padding: 15px 30px;
             border-radius: 10px;
             border: none;
@@ -216,25 +217,46 @@ header {
         }
       }
 
-      // @media (max-height: 730px) {
+      // @media (max-width: 1141px) {
       //   margin-top: -375px;
       // }
 
-      @media only screen and (max-width: 1141px) and (max-height: 730px) {
-        margin-top: -50px;
+      @media only screen and (min-width: 684px) and (max-width: 1141px) {
+        margin-top: -250px;
       }
 
-      @media only screen and (max-width: 821px) and (max-height: 1181px) {
-        margin-top: -50px;
+      @media only screen and (min-width: 542px) and (max-width: 683px) {
+        margin-top: -150px;
+        gap: 30px;
       }
 
-      @media (max-height: 730px) {
-        margin-top: -365px;
-      }
+      // @media only screen and (max-width: 1025px) and (max-height: 1367px) {
+      //   margin-top: 0px;
+      // }
 
-      @media only screen and (max-width: 769px) and (min-height: 1023px) {
-        margin-top: -30px;
-      }
+      // @media only screen and (max-width: 1025px) and (max-height: 955px) {
+      //   margin-top: -375px;
+      // }
+
+      // @media only screen and (max-width: 821px) and (max-height: 1181px) {
+      //   margin-top: -50px;
+      // }
+
+      // @media only screen and (max-width: 821px) and (max-height: 955px) {
+      //   margin-top: -375px;
+      // }
+
+      // @media (max-height: 730px) {
+      //   margin-top: -365px;
+      // }
+
+      // @media only screen and (min-width: 769px) and (max-height: 1025px) {
+      //   margin-top: -30px;
+      // }
+
+      // @media only screen and (max-width: 769px) and (min-height: 955px) {
+      //   margin-top: -175px;
+      // }
 
       @media only screen and (max-width: 541px) and (max-height: 721px) {
         margin-top: -115px;
@@ -249,7 +271,7 @@ header {
 
   .hero-footer {
     position: relative;
-    margin-top: -170px;
+    // margin-top: -170px;
     z-index: 10000;
     display: flex;
     justify-content: space-between;
@@ -278,7 +300,6 @@ header {
           transform: scale(1.5);
         }
       }
-
 
       .hero-link-email {
         text-decoration: none;
@@ -327,15 +348,13 @@ header {
       margin: 0;
     }
 
-    @media only screen and (max-width: 1141px) and (max-height: 730px) {
+    @media (max-width: 1141px) {
       margin: 0;
     }
 
-    @media only screen and (max-width: 769px) and (max-height: 1025px) {
-      margin-top: -30px;
-    }
-
-
+    // @media only screen and (max-width: 769px) and (max-height: 1025px) {
+    //   margin-top: -30px;
+    // }
 
     @media (max-width: 431px) {
       margin: 0;
@@ -353,8 +372,12 @@ header {
     right: 0;
     z-index: 1;
 
-    >img {
+    > img {
       width: 100%;
+    }
+
+    @media (min-width: 1765px) {
+      top: 188px;
     }
 
     @media (max-width: 1500px) {
@@ -382,12 +405,14 @@ header {
     }
 
     @media (max-width: 463px) {
-      top: 347px;
+      top: 410px;
+    }
+    @media (max-width: 376px) {
+      top: 374px;
     }
   }
 
   @keyframes move {
-
     0%,
     20%,
     50%,
