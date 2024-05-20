@@ -26,7 +26,7 @@ const fakeProjects = [
     technologys: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
     description:
       'A highly responsive web application for recipe management and shopping lists, offering an exceptional user experience. It essentially comprises two main sections: the Recipe Book and the Shopping List. Users can manage recipes and view them in detail within the Recipe Book, while also seamlessly adding ingredients from recipes directly to the Shopping List.',
-    imgPath: 'assets/img/join-photo.svg',
+    imgPath: 'assets/img/portfolio-join.svg',
     links: [
       'http://velizar-ganchev.com/my-recipe-book',
       'https://github.com/velizarganchev/my-recipe-book',
