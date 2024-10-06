@@ -7,7 +7,7 @@ const fakeProjects = [
     imgPath: 'assets/img/portfolio-join.svg',
     links: [
       'http://velizar-ganchev.com/join',
-      'https://github.com/velizarganchev/join',
+      'https://github.com/velizarganchev/join-group-work',
     ],
   },
   {
@@ -18,7 +18,7 @@ const fakeProjects = [
     imgPath: 'assets/img/portfolio-el-pollo-loco.svg',
     links: [
       'http://velizar-ganchev.com/el-pollo-loco',
-      'https://github.com/velizarganchev/DeveloperAkademie/tree/main/html-basics/el-pollo-loco',
+      'https://github.com/velizarganchev/el-pollo-loco-game',
     ],
   },
   {
