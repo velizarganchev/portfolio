@@ -24,14 +24,7 @@ export const appConfig: ApplicationConfig = {
     provideImgixLoader('http://velizar-ganchev.com/'),
     importProvidersFrom(
       provideFirebaseApp(() =>
-        initializeApp({
-          projectId: 'portfolio-e4994',
-          appId: '1:1069471818613:web:ca8e3950ed87b8d03ca93c',
-          storageBucket: 'portfolio-e4994.appspot.com',
-          apiKey: 'AIzaSyDtYR5oui5BNJ4kD4akA8O_5YnOyiXuyWE',
-          authDomain: 'portfolio-e4994.firebaseapp.com',
-          messagingSenderId: '1069471818613',
-        })
+        initializeApp()
       )
     ),
     importProvidersFrom(provideFirestore(() => getFirestore())), provideHttpClient(), provideTransloco({
