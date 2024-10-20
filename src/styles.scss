@@ -21,6 +21,7 @@ a {
   align-items: $ai;
   gap: $g;
 }
+
 @mixin scrollbar() {
   &::-webkit-scrollbar {
     width: 14px;
@@ -53,7 +54,6 @@ a {
 }
 
 body {
-  max-width: 1920px;
   margin: 0px;
   font-family: "Poppins", "Helvetica Neue", sans-serif;
   background-color: $dark_blue;

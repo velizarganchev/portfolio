@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import Aos from "aos";
+import * as AOS from "aos";
 
 @Component({
   selector: 'app-root',
@@ -16,9 +16,9 @@ export class AppComponent implements OnInit {
   title = 'portfolio';
 
   ngOnInit(): void {
-    Aos.init({
+    AOS.init({
       easing: "ease-in-out"
     });
-    Aos.refresh();
+    AOS.refresh();
   }
 }

@@ -47,7 +47,7 @@ header {
         width: calc(100px + 70vw);
 
         @media (max-width: 431px) {
-          left: calc(-100px - -1vw);
+          left: calc(-100px + 1vw);
         }
       }
 
@@ -63,14 +63,6 @@ header {
       z-index: 9999;
       @include dFlex();
       flex-direction: column;
-
-      @media (max-width: 1210px) {
-        margin-top: calc(-100px - 10vw);
-      }
-
-      @media (min-height: 730px) {
-        margin-top: calc(-100px - -32vw);
-      }
 
       @media only screen and (min-device-width: 414px) and (max-device-width: 414px) and (min-device-height: 896px) and (max-device-height: 896px) and (-webkit-min-device-pixel-ratio: 2) {}
 

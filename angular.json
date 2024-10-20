@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "allowedCommonJsDependencies": ["lodash"],
             "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -30,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/aos/dist/aos.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -39,8 +41,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "2mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -90,6 +92,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/aos/dist/aos.css",
               "src/styles.scss"
             ],
             "scripts": []
