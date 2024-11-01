@@ -1,5 +1,16 @@
 const fakeProjects = [
   {
+    title: 'DaBubble',
+    technologys: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
+    description:
+      'A business chat client for real-time communication and team collaboration, similar to Discord, WhatsApp, or Slack, but built specifically for professional use.',
+    imgPath: 'assets/img/portfolio-dabubble.png',
+    links: [
+      'https://dabubble.velizar-ganchev.com',
+      'https://github.com/velizarganchev/DaBubble',
+    ],
+  },
+  {
     title: 'Join',
     technologys: ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
     description:
@@ -26,7 +37,7 @@ const fakeProjects = [
     technologys: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
     description:
       'A web application for managing recipes and shopping lists, designed to offer an exceptional user experience. It features two main sections: the Recipe Book and the Shopping List. Users can manage and view recipes in detail within the Recipe Book, while seamlessly adding ingredients from recipes directly to the Shopping List.',
-    imgPath: 'assets/img/portfolio-join.svg',
+    imgPath: 'assets/img/portfolio-my-recipe.png',
     links: [
       'http://velizar-ganchev.com/my-recipe-book',
       'https://github.com/velizarganchev/my-recipe-book',

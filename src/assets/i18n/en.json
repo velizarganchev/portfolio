@@ -25,11 +25,12 @@
     "subTitle": "Explore a selection of my work here - Interact with projects to see my skills in action."
   },
   "portfolioItem": {
-    "description0": "Task manager inspired by the Kanban System. Create and organize tasks using drag and dropfunctions, assign users and categories.",
-    "description1": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.",
-    "description2": "A web application for managing recipes and shopping lists, designed to offer an exceptional user experience. It features two main sections: the Recipe Book and the Shopping List. Users can manage and view recipes in detail within the Recipe Book, while seamlessly adding ingredients from recipes directly to the Shopping List.",
-    "description3": "The website serves as a platform for a food delivery service, where customers can choose their favorite cake from a wide selection of products.",
-    "description4": "A full-stack hotel booking application developed using Next.js, seamlessly integrated with the Stripe Payment Gateway to facilitate user payments, adhering to industry best practices."
+    "description0": "A business chat client for real-time communication and team collaboration, similar to Discord, WhatsApp, or Slack, but built specifically for professional use.",
+    "description1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and dropfunctions, assign users and categories.",
+    "description2": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.",
+    "description3": "A web application for managing recipes and shopping lists, designed to offer an exceptional user experience. It features two main sections: the Recipe Book and the Shopping List. Users can manage and view recipes in detail within the Recipe Book, while seamlessly adding ingredients from recipes directly to the Shopping List.",
+    "description4": "The website serves as a platform for a food delivery service, where customers can choose their favorite cake from a wide selection of products.",
+    "description5": "A full-stack hotel booking application developed using Next.js, seamlessly integrated with the Stripe Payment Gateway to facilitate user payments, adhering to industry best practices."
   },
   "contact": {
     "title": "Contact",
