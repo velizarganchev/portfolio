@@ -13,7 +13,7 @@
   "about": {
     "title": "Über mich",
     "mainText": "Herzlich willkommen! Ich bin Velizar, ein engagierter Frontend-Entwickler aus Erwitte, Deutschland, der sich leidenschaftlich für Codierung und Design einsetzt. Mein Einstieg in die Welt der Technologie begann bereits in meiner Kindheit, wo meine Faszination für Computer zu einem beruflichen Streben wurde.",
-    "subTextOne": "Meine Zeit an der Developer Academy ging über das reine Lernen hinaus und bot mir auch unschätzbare praktische Erfahrungen. Durch eine Reihe von Projekten und gemeinschaftliche Bemühungen habe ich meine Fähigkeiten in der Frontend-Entwicklung verfeinert, insbesondere in der präzisen Umsetzung von Design und der Aufmerksamkeit für Details.",
+    "subTextOne": "Meine Zeit an der Developer Akademie ging über das reine Lernen hinaus und bot mir auch unschätzbare praktische Erfahrungen. Durch eine Reihe von Projekten und gemeinschaftliche Bemühungen habe ich meine Fähigkeiten in der Frontend-Entwicklung verfeinert, insbesondere in der präzisen Umsetzung von Design und der Aufmerksamkeit für Details.",
     "subTextTwo": "Für einen Einblick in meine Arbeitsmoral und Fähigkeiten lade ich Sie ein, mein Portfolio zu erkunden und aus erster Hand die Projekte zu erleben, an denen ich mitgewirkt habe."
   },
   "skills": {
@@ -28,7 +28,7 @@
     "description0": "Ein Business-Chat-Client für Echtzeitkommunikation und Team-Kollaboration, ähnlich wie Discord, WhatsApp oder Slack, aber speziell für den professionellen Einsatz entwickelt.",
     "description1": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
     "description2": "Ein einfaches Jump-and-Run-Spiel mit einem objektorientierten Ansatz. Helfen Sie Pepe dabei, Münzen und Salsaboten zu sammeln, um gegen das mörderische Huhn anzutreten.",
-    "description3": "Eine Webanwendung zur Verwaltung von Rezepten und Einkaufslisten, die eine außergewöhnliche Benutzerfreundlichkeit bietet. Sie verfügt über zwei Hauptbereiche: das Rezeptbuch und die Einkaufsliste. Benutzer können Rezepte im Rezeptbuch verwalten und im Detail ansehen, während sie Zutaten aus Rezepten direkt in die Einkaufsliste einfügen können.",
+    "description3": "Rezept- und Einkaufslisten-App: Rezepte verwalten und Zutaten mit einem Klick zur Einkaufsliste hinzufügen.",
     "description4": "Die Webseite dient als Plattform für einen Essens-Lieferdienst, auf der Kunden aus einer breiten Auswahl an Produkten ihren favorisierten Kuchen auswählen können.",
     "description5": "Es handelt sich um eine Full-Stack-Hotelbuchungsanwendung, die mit Next.js erstellt wurde und die Stripe-Zahlungsgateway integriert hat, um Zahlungen von Benutzern zu akzeptieren und bewährte Verfahren zu befolgen."
   },
@@ -36,7 +36,7 @@
     "title": "Kontakt",
     "question": "Haben Sie ein Problem, das gelöst werden muss?",
     "text": "Kontaktieren Sie mich über dieses Formular. Ich interessiere mich dafür, von Ihnen zu hören, Ihre Ideen kennenzulernen und zu Ihren Projekten beizutragen.",
-    "subTextOne": "Benötigen Sie einen Frontend-Entwickler?",
+    "subTextOne": "Benötigen Sie einen Frontend-Entwickler ? ",
     "subTextTwo": " Kontaktieren Sie mich!",
     "name": "Ihr Name",
     "email": "Ihr Email",

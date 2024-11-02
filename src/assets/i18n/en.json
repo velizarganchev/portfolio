@@ -13,7 +13,7 @@
   "about": {
     "title": "About me",
     "mainText": "Greetings! I'm Velizar, a dedicated frontend developer based in Erwitte, Germany, deeply passionate about coding and design. My journey into the tech world began in childhood, where my fascination with computers evolved into a professional pursuit.",
-    "subTextOne": "My time at the Developer Academy was not just about learning but also about gaining invaluable practical experience. Through a series of projects and collaborative efforts, I've honed my skills in frontend development, particularly in precision design implementation and attention to detail.",
+    "subTextOne": "My time at the Developer Akademie was not just about learning but also about gaining invaluable practical experience. Through a series of projects and collaborative efforts, I've honed my skills in frontend development, particularly in precision design implementation and attention to detail.",
     "subTextTwo": "For a glimpse into my work ethic and capabilities, I invite you to explore my portfolio and witness firsthand the projects I've contributed to."
   },
   "skills": {
@@ -28,15 +28,15 @@
     "description0": "A business chat client for real-time communication and team collaboration, similar to Discord, WhatsApp, or Slack, but built specifically for professional use.",
     "description1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and dropfunctions, assign users and categories.",
     "description2": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.",
-    "description3": "A web application for managing recipes and shopping lists, designed to offer an exceptional user experience. It features two main sections: the Recipe Book and the Shopping List. Users can manage and view recipes in detail within the Recipe Book, while seamlessly adding ingredients from recipes directly to the Shopping List.",
+    "description3": "Recipe and shopping list web app: manage recipes and add ingredients to the shopping list with a click.",
     "description4": "The website serves as a platform for a food delivery service, where customers can choose their favorite cake from a wide selection of products.",
     "description5": "A full-stack hotel booking application developed using Next.js, seamlessly integrated with the Stripe Payment Gateway to facilitate user payments, adhering to industry best practices."
   },
   "contact": {
     "title": "Contact",
     "question": "Got a problem to solve?",
-    "text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-    "subTextOne": "Need a Frontend developer?",
+    "text": "Contact me through this form. I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "subTextOne": "Need a Frontend developer ? ",
     "subTextTwo": "Contact me!",
     "name": "Your name",
     "email": "Your email",
