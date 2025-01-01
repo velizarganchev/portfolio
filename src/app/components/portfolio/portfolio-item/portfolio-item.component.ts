@@ -16,6 +16,7 @@ export class PortfolioItemComponent {
     technologys: string[];
     description: string;
     links: string[];
+    api_link?: string;
   };
 
   @Input('srIndex') index!: number;

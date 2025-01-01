@@ -17,9 +17,10 @@ const fakeProjects = [
       'Task manager inspired by the Kanban System. Create and organize tasks using drag and dropfunctions, assign users and categories.',
     imgPath: 'assets/img/portfolio-join.svg',
     links: [
-      'http://velizar-ganchev.com/join',
+      'https://join.velizar-ganchev.com',
       'https://github.com/velizarganchev/join-group-work',
     ],
+    api_link: 'https://github.com/velizarganchev/todo-list-backend',
   },
   {
     title: 'El Pollo Loco',
@@ -28,7 +29,7 @@ const fakeProjects = [
       'A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.',
     imgPath: 'assets/img/portfolio-el-pollo-loco.svg',
     links: [
-      'http://velizar-ganchev.com/el-pollo-loco',
+      'https://el-pollo-loco.velizar-ganchev.com',
       'https://github.com/velizarganchev/el-pollo-loco-game',
     ],
   },
@@ -39,7 +40,7 @@ const fakeProjects = [
       'A web application for managing recipes and shopping lists, designed to offer an exceptional user experience. It features two main sections: the Recipe Book and the Shopping List. Users can manage and view recipes in detail within the Recipe Book, while seamlessly adding ingredients from recipes directly to the Shopping List.',
     imgPath: 'assets/img/portfolio-my-recipe.png',
     links: [
-      'http://velizar-ganchev.com/my-recipe-book',
+      'https://my-recipe-book.velizar-ganchev.com',
       'https://github.com/velizarganchev/my-recipe-book',
     ],
   },

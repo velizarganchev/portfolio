@@ -9,9 +9,12 @@
         <p class="technologys">{{project.technologys[0]}} | {{project.technologys[1]}} | {{project.technologys[2]}} |
             {{project.technologys[3]}} | {{project.technologys[4]}}</p>
         <p class="description">{{t('description' + index)}}</p>
-        <div class="buttons-container">
+        <div [ngClass]="project.api_link ? 'lg-btn-con-w' : ''" class="buttons-container">
             <a href="{{project.links[0]}}" target="_blank" class="life-test-btn">Life test</a>
             <a href="{{project.links[1]}}" target="_blank" class="github-btn">Github</a>
+            @if (project.api_link) {
+            <a href="{{project.api_link}}" target="_blank" class="api-btn">Github Api</a>
+            }
         </div>
     </div>
 </section>
