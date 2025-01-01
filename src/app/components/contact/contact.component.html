@@ -1,6 +1,6 @@
 <section id="contact" *transloco="let t; read:'contact'">
     <div class="title-container">
-        <img src="../../../assets/img/contact-line-one.svg" alt="">
+        <img src="assets/img/contact-line-one.svg" alt="">
         <h2>{{t('title')}}</h2>
     </div>
     <div class="contact-container">
@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="purple-shadow-footer-container">
-            <img src="assets/img/purple-shadow-footer.svg" alt="Purple Shadow">
+            <img src="/assets/img/purple-shadow-footer.svg" alt="Purple Shadow">
         </div>
         <div class="contact-right" data-aos="fade-left" data-aos-duration="1500">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
@@ -21,19 +21,19 @@
                         [ngClass]="{'exclamation-input': !name.valid && name.touched, 'check-input': name.valid && name.touched}"
                         #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
                         placeholder="{{t('name')}}" minlength="4" required>
-                    <p class="error-message" *ngIf="!name.valid && name.touched">Your name is required</p>
+                    <p class="error-message" *ngIf="!name.valid && name.touched">Name is required</p>
 
                     <input
                         [ngClass]="{'exclamation-input': !email.valid && email.touched, 'check-input': email.valid && email.touched}"
                         #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email"
-                        placeholder="{{t('email')}}" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                    <p *ngIf="!email.valid && email.touched" class="error-message">Your email is required</p>
+                        placeholder="{{t('email')}}" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
+                    <p *ngIf="!email.valid && email.touched" class="error-message">Email is required</p>
 
                     <textarea
                         [ngClass]="{'exclamation-input': !message.valid && message.touched, 'check-input': message.valid && message.touched}"
                         #message="ngModel" [(ngModel)]="contactData.message" name="message" cols="30" rows="10"
                         placeholder="{{t('message')}}" required></textarea>
-                    <p *ngIf="!message.valid && message.touched" class="error-message">Your message is empty</p>
+                    <p *ngIf="!message.valid && message.touched" class="error-message">Message is required</p>
                 </div>
                 <div class="checkbox-container">
                     <div class="checkbox-input">
@@ -42,12 +42,12 @@
                         <label for="privacy">{{t('checkboxF')}}<a
                                 routerLink="/privacy-policy">{{t('checkboxS')}}</a>{{t('checkboxT')}}</label><br>
                     </div>
-                    <p *ngIf="!privacy.checked && contactForm.touched" class="error-message">Please accept the privacy
+                    <p *ngIf="!privacy.checked && contactForm.touched" class="error-message">Privacy policy acceptance is required
                         policy.</p>
                 </div>
                 <div *ngIf="showSuccessMessage" class="success-message">Your message has been successfully sent.</div>
                 <div class="button-container">
-                    <button [ngClass]="contactForm.valid ? 'send-button' : 'disabled-button'"
+                    <button [ngClass]="{'send-button': contactForm.valid, 'disabled-button': !contactForm.valid}"
                         [disabled]="!contactForm.valid" type="submit">{{t('btn')}} :&#41;</button>
                 </div>
             </form>
