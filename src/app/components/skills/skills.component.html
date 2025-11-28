@@ -1,57 +1,43 @@
-<section id="skills" *transloco="let t; read:'skills'">
+<section id="skills" *transloco="let t; read: 'skills'">
     <div class="skills-green-shadow">
-        <img src="assets/img/green-shadow2.svg" alt="">
+        <img src="assets/img/green-shadow2.svg" alt="" />
     </div>
+
     <div class="right-section">
-        <h2>{{t("title")}}</h2>
-        <img src="../../../assets/img/skils-title-vector.svg" alt="">
-        <h4>{{t("text")}}</h4>
+        <h2>{{ t('title') }}</h2>
+        <img src="../../../assets/img/skils-title-vector.svg" alt="" />
+        <h4>{{ t('text') }}</h4>
+
         <div class="btn-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
-            <a href="#contact"><button>{{t("btn")}}</button></a>
+            <a href="#contact">
+                <button>{{ t('btn') }}</button>
+            </a>
         </div>
     </div>
+
     <div class="left-section" data-aos="flip-left" data-aos-duration="2500">
-        <div class="icon-container">
-            <img src="../../../assets/img/angular-skills.svg" alt="">Angular
+        <div class="skills-category-toggle">
+            @for (group of skillGroups; track group.key; let i = $index) {
+            <button type="button" (click)="setGroup(i)" [class.active]="i === currentGroupIndex">
+                {{ group.label }}
+            </button>
+            }
         </div>
-        <div class="icon-container">
-            <img src="../../../assets/img/nextjs.svg" alt="">Next.js
-        </div>
-        <div class="icon-container">
-            <img src="../../../assets/img/typescript-skills.svg" alt="">TypeScript
-        </div>
-        <div class="icon-container">
-            <img src="../../../assets/img/javScript-skills.svg" alt="">JavaScript
-        </div>
-        <div class="icon-container">
-            <img src="../../../assets/img/html-skills.svg" alt="">HTML
-        </div>
-        <div class="icon-container">
-            <img src="../../../assets/img/firebase-skills.svg" alt="">Firebase
-        </div>
-        <div class="icon-container">
-            <img src="../../../assets/img/mongodb.svg" alt="">MongoDB
-        </div>
-        <div class="icon-container">
-            <img src="../../../assets/img/git-skills.svg" alt="">GIT
-        </div>
-        <div class="icon-container">
-            <img src="../../../assets/img/css-skills.svg" alt="">CSS
-        </div>
-        <div class="icon-container">
-            <img src="../../../assets/img/api-skills.svg" alt="">Rest-Api
-        </div>
-        <div class="icon-container">
-            <img src="../../../assets/img/scrum-skills.svg" alt="">Scrum
-        </div>
-        <div class="icon-container">
-            <img src="../../../assets/img/material-skills.svg" alt="">Material Desing
+
+        <div class="skills-grid">
+            @for (skill of currentGroup.items; track skill.label) {
+            <div class="icon-container">
+                <img [src]="skill.icon" [alt]="skill.label" />
+                {{ skill.label }}
+            </div>
+            }
         </div>
     </div>
+
     <div class="responsiv-btn-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000"
         data-aos-duration="1800">
         <a href="#contact">
-            <button>{{t("btn")}}</button>
+            <button>{{ t('btn') }}</button>
         </a>
     </div>
 </section>

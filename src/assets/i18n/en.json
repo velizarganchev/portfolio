@@ -6,32 +6,33 @@
   },
   "hero": {
     "iAm": "I am",
-    "subtitle": "FRONTEND DEVELOPER",
+    "subtitle": "Fullstack Developer",
     "btn": "Let's talk!",
     "scroll": "scroll down"
   },
   "about": {
     "title": "About me",
-    "mainText": "Greetings! I'm Velizar, a dedicated frontend developer based in Erwitte, Germany, deeply passionate about coding and design. My journey into the tech world began in childhood, where my fascination with computers evolved into a professional pursuit.",
-    "subTextOne": "My time at the Developer Akademie was not just about learning but also about gaining invaluable practical experience. Through a series of projects and collaborative efforts, I've honed my skills in frontend development, particularly in precision design implementation and attention to detail.",
-    "subTextTwo": "For a glimpse into my work ethic and capabilities, I invite you to explore my portfolio and witness firsthand the projects I've contributed to."
+    "mainText": "Hi, I’m Velizar — a fullstack developer from Erwitte, Germany. I build practical, modern web applications with clean architecture and a strong focus on user experience. Even though my career didn’t initially start in tech, I naturally found my way into software development — and quickly realized this is where I can create the most value.",
+    "subTextOne": "During my time at the Developer Akademie, I gained hands-on experience in both frontend and backend development. Through real projects and teamwork, I strengthened my skills in Angular, TypeScript, Python, Django, REST APIs and cloud-based application structure.",
+    "subTextTwo": "If you’d like to get a better impression of my work style and technical abilities, feel free to explore my portfolio and take a look at the projects I’ve built."
   },
   "skills": {
     "title": "My skills",
-    "text": "By immersing myself in diverse projects, I've had the opportunity to constantly broaden and enhance my expertise in front-end development. This journey has deepened my proficiency in HTML, CSS, and JavaScript, while also delving into contemporary frameworks like Angular and React.",
+    "text": "Over time, I’ve grown from a frontend-focused mindset into a fully rounded fullstack developer. Today I combine modern UI development with backend logic, APIs, databases and cloud workflows — giving me the ability to build complete applications from start to finish.",
     "btn": "Get in touch"
   },
   "portfolioMain": {
     "subTitle": "Explore a selection of my work here - Interact with projects to see my skills in action."
   },
   "portfolioItem": {
-    "description0": "A business chat client for real-time communication and team collaboration, similar to Discord, WhatsApp, or Slack, but built specifically for professional use.",
-    "description1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and dropfunctions, assign users and categories.",
-    "description2": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.",
-    "description3": "Recipe and shopping list web app: manage recipes and add ingredients to the shopping list with a click.",
-    "description4": "The website serves as a platform for a food delivery service, where customers can choose their favorite cake from a wide selection of products.",
-    "description5": "A full-stack hotel booking application developed using Next.js, seamlessly integrated with the Stripe Payment Gateway to facilitate user payments, adhering to industry best practices."
-  },
+  "description0": "A fullstack video‑streaming platform featuring authentication, adaptive video processing, background workers, and cloud storage — inspired by modern streaming services.",
+  "description1": "A business chat client for real-time communication and team collaboration, similar to Discord, WhatsApp, or Slack, but built specifically for professional use.",
+  "description2": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+  "description3": "A simple jump-and-run game with an object-oriented approach. Assist Pepe in collecting coins and salsa bottles to combat the killer chicken.",
+  "description4": "Recipe and shopping list web app: manage recipes and add ingredients to the shopping list with a click.",
+  "description5": "The website serves as a platform for a food delivery service, where customers can choose their favorite cake from a wide selection of products.",
+  "description6": "A full-stack hotel booking application developed using Next.js, seamlessly integrated with the Stripe Payment Gateway to facilitate user payments, adhering to industry best practices."
+},
   "contact": {
     "title": "Contact",
     "question": "Got a problem to solve?",

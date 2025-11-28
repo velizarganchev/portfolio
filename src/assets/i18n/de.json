@@ -6,32 +6,33 @@
   },
   "hero": {
     "iAm": "Ich bin",
-    "subtitle": "FRONTEND ENTWICKLER",
+    "subtitle": "Fullstack Developer",
     "btn": "Lass uns reden!",
     "scroll": "nach unten"
   },
   "about": {
     "title": "Über mich",
-    "mainText": "Herzlich willkommen! Ich bin Velizar, ein engagierter Frontend-Entwickler aus Erwitte, Deutschland, der sich leidenschaftlich für Codierung und Design einsetzt. Mein Einstieg in die Welt der Technologie begann bereits in meiner Kindheit, wo meine Faszination für Computer zu einem beruflichen Streben wurde.",
-    "subTextOne": "Meine Zeit an der Developer Akademie ging über das reine Lernen hinaus und bot mir auch unschätzbare praktische Erfahrungen. Durch eine Reihe von Projekten und gemeinschaftliche Bemühungen habe ich meine Fähigkeiten in der Frontend-Entwicklung verfeinert, insbesondere in der präzisen Umsetzung von Design und der Aufmerksamkeit für Details.",
-    "subTextTwo": "Für einen Einblick in meine Arbeitsmoral und Fähigkeiten lade ich Sie ein, mein Portfolio zu erkunden und aus erster Hand die Projekte zu erleben, an denen ich mitgewirkt habe."
+    "mainText": "Hi, ich bin Velizar — ein Fullstack-Entwickler aus Erwitte, Deutschland. Ich entwickle moderne, praxisnahe Webanwendungen mit sauberer Architektur und starkem Fokus auf Benutzererlebnis. Auch wenn meine Karriere ursprünglich nicht in der IT begann, fand ich auf natürliche Weise meinen Weg in die Softwareentwicklung — und erkannte schnell, dass ich hier den größten Mehrwert schaffen kann.",
+    "subTextOne": "Während meiner Zeit an der Developer Akademie sammelte ich praxisnahe Erfahrungen sowohl im Frontend- als auch im Backend-Bereich. Durch echte Projekte und Teamarbeit habe ich meine Fähigkeiten in Angular, TypeScript, Python, Django, REST-APIs und cloudbasierten Anwendungsstrukturen weiter ausgebaut.",
+    "subTextTwo": "Wenn Sie einen besseren Eindruck von meiner Arbeitsweise und meinen technischen Fähigkeiten bekommen möchten, lade ich Sie ein, mein Portfolio zu erkunden und einen Blick auf die Projekte zu werfen, die ich entwickelt habe."
   },
   "skills": {
     "title": "Fähigkeiten",
-    "text": "Durch die Arbeit an verschiedensten Projekten konnte ich kontinuierlich mein Wissen und meine Fähigkeiten im Bereich Front-End-Entwicklung erweitern und verfeinern. Diese Reise hat meine Expertise in HTML, CSS und JavaScript vertieft, während ich mich auch mit modernen Frameworks wie Angular und React auseinandergesetzt habe.",
+    "text": "Mit der Zeit habe ich mich vom reinen Frontend-Fokus zu einem vollwertigen Fullstack-Entwickler entwickelt.Heute kombiniere ich moderne UI-Entwicklung mit Backend-Logik, APIs, Datenbanken und Cloud-Workflows — und kann dadurch vollständige Anwendungen von Anfang bis Ende entwickeln.",
     "btn": "Kontakt aufnehmen"
   },
   "portfolioMain": {
     "subTitle": "Erkunden Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
   },
   "portfolioItem": {
-    "description0": "Ein Business-Chat-Client für Echtzeitkommunikation und Team-Kollaboration, ähnlich wie Discord, WhatsApp oder Slack, aber speziell für den professionellen Einsatz entwickelt.",
-    "description1": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-    "description2": "Ein einfaches Jump-and-Run-Spiel mit einem objektorientierten Ansatz. Helfen Sie Pepe dabei, Münzen und Salsaboten zu sammeln, um gegen das mörderische Huhn anzutreten.",
-    "description3": "Rezept- und Einkaufslisten-App: Rezepte verwalten und Zutaten mit einem Klick zur Einkaufsliste hinzufügen.",
-    "description4": "Die Webseite dient als Plattform für einen Essens-Lieferdienst, auf der Kunden aus einer breiten Auswahl an Produkten ihren favorisierten Kuchen auswählen können.",
-    "description5": "Es handelt sich um eine Full-Stack-Hotelbuchungsanwendung, die mit Next.js erstellt wurde und die Stripe-Zahlungsgateway integriert hat, um Zahlungen von Benutzern zu akzeptieren und bewährte Verfahren zu befolgen."
-  },
+  "description0": "Eine Fullstack‑Videostreaming‑Plattform mit Authentifizierung, adaptiver Videokonvertierung, Hintergrund‑Workern und Cloud‑Speicherung — inspiriert von modernen Streaming‑Diensten.",
+  "description1": "Ein Business‑Chat‑Client für Echtzeitkommunikation und Team‑Kollaboration, ähnlich wie Discord, WhatsApp oder Slack, aber speziell für den professionellen Einsatz entwickelt.",
+  "description2": "Aufgabenmanager, inspiriert vom Kanban‑System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag‑and‑Drop‑Funktionen, weisen Sie Benutzer und Kategorien zu.",
+  "description3": "Ein einfaches Jump‑and‑Run‑Spiel mit einem objektorientierten Ansatz. Helfen Sie Pepe dabei, Münzen und Salsaboten zu sammeln, um gegen das mörderische Huhn anzutreten.",
+  "description4": "Rezept‑ und Einkaufslisten‑App: Rezepte verwalten und Zutaten mit einem Klick zur Einkaufsliste hinzufügen.",
+  "description5": "Die Webseite dient als Plattform für einen Essens‑Lieferdienst, auf der Kunden aus einer breiten Auswahl an Produkten ihren favorisierten Kuchen auswählen können.",
+  "description6": "Eine Full‑Stack‑Hotelbuchungsanwendung, die mit Next.js erstellt wurde und die Stripe‑Zahlungsschnittstelle integriert, um sichere Benutzerzahlungen zu ermöglichen."
+},
   "contact": {
     "title": "Kontakt",
     "question": "Haben Sie ein Problem, das gelöst werden muss?",
