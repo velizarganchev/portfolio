@@ -75,6 +75,10 @@ export class SkillsComponent implements OnInit, OnDestroy {
           label: 'Python',
         },
         {
+          icon: '../../../assets/img/csharp.svg',
+          label: 'C#',
+        },
+        {
           icon: '../../../assets/img/django.svg',
           label: 'Django',
         },
@@ -85,6 +89,10 @@ export class SkillsComponent implements OnInit, OnDestroy {
         {
           icon: '../../../assets/img/postgresql.svg',
           label: 'PostgreSQL',
+        },
+        {
+          icon: '../../../assets/img/microsoftsqlserver.svg',
+          label: 'Microsoft SQL Server',
         },
         {
           icon: '../../../assets/img/mongodb.svg',
